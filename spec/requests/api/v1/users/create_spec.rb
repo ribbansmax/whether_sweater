@@ -36,6 +36,9 @@ describe "Creates a user" do
       post '/api/v1/users', params: data
 
       expect(response.status).to eq(400)
+      data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(data[:error]).to eq('Validation failed: Email has already been taken')
     end
 
     it 'should not create a user if their password does not match the confirmation' do
@@ -48,6 +51,10 @@ describe "Creates a user" do
       post '/api/v1/users', params: data
 
       expect(response.status).to eq(400)
+      expect(response.status).to eq(400)
+      data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(data[:error]).to eq("Validation failed: Password confirmation doesn't match Password")
     end
   end
 end
