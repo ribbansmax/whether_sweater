@@ -1,0 +1,412 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=champaign,il&key=HIDE_MY_DATA&to=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Mar 2021 18:17:58 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=F4AC6EBA62C4D81A3EDC71CB8B7CCE90; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Mon, 08 Mar 2021 18:17:58 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJoYXNUb2xsUm9hZCI6dHJ1ZSwiaGFzQnJpZGdlIjp0cnVlLCJib3VuZGluZ0JveCI6eyJsciI6eyJsbmciOi04OC4yNDM1MjMsImxhdCI6MzkuMTA5Nzc2fSwidWwiOnsibG5nIjotMTA0Ljk5MjkwNSwibGF0Ijo0MC4xMTg0NTh9fSwiZGlzdGFuY2UiOjk5OC4wODgsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNIaWdod2F5Ijp0cnVlLCJjb21wdXRlZFdheXBvaW50cyI6W10sInJvdXRlRXJyb3IiOnsiZXJyb3JDb2RlIjotNDAwLCJtZXNzYWdlIjoiIn0sImZvcm1hdHRlZFRpbWUiOiIxNDoxOTozNyIsInNlc3Npb25JZCI6IjYwNDY2YTU1LTAzYjAtNjc1MC0wMmI0LTMyYjctMTI1ZDhjYjhiMTA3IiwiaGFzQWNjZXNzUmVzdHJpY3Rpb24iOmZhbHNlLCJyZWFsVGltZSI6NTM0NTYsImhhc1NlYXNvbmFsQ2xvc3VyZSI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsImZ1ZWxVc2VkIjo1MC44NSwibGVncyI6W3siaGFzVG9sbFJvYWQiOnRydWUsImhhc0JyaWRnZSI6dHJ1ZSwiZGVzdE5hcnJhdGl2ZSI6IlByb2NlZWQgdG8gREVOVkVSLCBDTy4iLCJkaXN0YW5jZSI6OTk4LjA4OCwiaGFzVGltZWRSZXN0cmljdGlvbiI6ZmFsc2UsImhhc1R1bm5lbCI6ZmFsc2UsImhhc0hpZ2h3YXkiOnRydWUsImluZGV4IjowLCJmb3JtYXR0ZWRUaW1lIjoiMTQ6MTk6MzciLCJvcmlnSW5kZXgiOjMsImhhc0FjY2Vzc1Jlc3RyaWN0aW9uIjpmYWxzZSwiaGFzU2Vhc29uYWxDbG9zdXJlIjpmYWxzZSwiaGFzQ291bnRyeUNyb3NzIjpmYWxzZSwicm9hZEdyYWRlU3RyYXRlZ3kiOltbXV0sImRlc3RJbmRleCI6MTIsInRpbWUiOjUxNTc3LCJoYXNVbnBhdmVkIjpmYWxzZSwib3JpZ05hcnJhdGl2ZSI6IkdvIHdlc3Qgb24gSS03MiBXLiIsIm1hbmV1dmVycyI6W3siZGlzdGFuY2UiOjAuMDg4LCJzdHJlZXRzIjpbIlcgVW5pdmVyc2l0eSBBdmUiXSwibmFycmF0aXZlIjoiU3RhcnQgb3V0IGdvaW5nIHdlc3Qgb24gVyBVbml2ZXJzaXR5IEF2ZSB0b3dhcmQgUyBSYW5kb2xwaCBTdC4iLCJ0dXJuVHlwZSI6MCwic3RhcnRQb2ludCI6eyJsbmciOi04OC4yNDM1MjMsImxhdCI6NDAuMTE2MzI5fSwiaW5kZXgiOjAsImZvcm1hdHRlZFRpbWUiOiIwMDowMDowOSIsImRpcmVjdGlvbk5hbWUiOiJXZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTQwLjExNjMyOTE5MzExNTIzNCwtODguMjQzNTIyNjQ0MDQyOTd8bWFya2VyLTF8fDQwLjExNjMwNjMwNDkzMTY0LC04OC4yNDUxNzgyMjI2NTYyNXxtYXJrZXItMnx8JmNlbnRlcj00MC4xMTYzMTc3NDkwMjM0NCwtODguMjQ0MzUwNDMzMzQ5NjEmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTQmcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjksImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9pY29uLWRpcnMtc3RhcnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjowLjEzNywic3RyZWV0cyI6WyJOIFJhbmRvbHBoIFN0Il0sIm5hcnJhdGl2ZSI6IlR1cm4gcmlnaHQgb250byBOIFJhbmRvbHBoIFN0LiIsInR1cm5UeXBlIjoyLCJzdGFydFBvaW50Ijp7ImxuZyI6LTg4LjI0NTE3OCwibGF0Ijo0MC4xMTYzMDZ9LCJpbmRleCI6MSwiZm9ybWF0dGVkVGltZSI6IjAwOjAwOjIyIiwiZGlyZWN0aW9uTmFtZSI6Ik5vcnRoIiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTQwLjExNjMwNjMwNDkzMTY0LC04OC4yNDUxNzgyMjI2NTYyNXxtYXJrZXItMnx8NDAuMTE4MjgyMzE4MTE1MjM0LC04OC4yNDUyMDExMTA4Mzk4NHxtYXJrZXItM3x8JmNlbnRlcj00MC4xMTcyOTQzMTE1MjM0NCwtODguMjQ1MTg5NjY2NzQ4MDUmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTImcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjIyLCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfcmlnaHRfc20uZ2lmIiwiZGlyZWN0aW9uIjoxfSx7ImRpc3RhbmNlIjoxLjkzNSwic3RyZWV0cyI6WyJXIGNodXJjaCBTdCJdLCJuYXJyYXRpdmUiOiJUdXJuIGxlZnQgb250byBXIGNodXJjaCBTdC4iLCJ0dXJuVHlwZSI6Niwic3RhcnRQb2ludCI6eyJsbmciOi04OC4yNDUyMDEsImxhdCI6NDAuMTE4MjgyfSwiaW5kZXgiOjIsImZvcm1hdHRlZFRpbWUiOiIwMDowMzowOSIsImRpcmVjdGlvbk5hbWUiOiJXZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTQwLjExODI4MjMxODExNTIzNCwtODguMjQ1MjAxMTEwODM5ODR8bWFya2VyLTN8fDQwLjExODQ1Nzc5NDE4OTQ1LC04OC4yODE3MzA2NTE4NTU0N3xtYXJrZXItNHx8JmNlbnRlcj00MC4xMTgzNzAwNTYxNTIzNDQsLTg4LjI2MzQ2NTg4MTM0NzY2JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTkmcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjE4OSwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX2xlZnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjo3OS45MDQsInN0cmVldHMiOlsiSS03MiBXIl0sIm5hcnJhdGl2ZSI6IlcgY2h1cmNoIFN0IGJlY29tZXMgSS03MiBXLiIsInR1cm5UeXBlIjowLCJzdGFydFBvaW50Ijp7ImxuZyI6LTg4LjI4MTczMSwibGF0Ijo0MC4xMTg0NTh9LCJpbmRleCI6MywiZm9ybWF0dGVkVGltZSI6IjAxOjA5OjQ3IiwiZGlyZWN0aW9uTmFtZSI6Ildlc3QiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbeyJleHRyYVRleHQiOiIiLCJ0ZXh0IjoiNzIiLCJ0eXBlIjoxLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMS5wbmc/bj03MiZkPVdFU1QiLCJkaXJlY3Rpb24iOjd9XSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9SElERV9NWV9EQVRBJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9NDAuMTE4NDU3Nzk0MTg5NDUsLTg4LjI4MTczMDY1MTg1NTQ3fG1hcmtlci00fHwzOS44MDE5NjM4MDYxNTIzNDQsLTg5LjU5NTY4MDIzNjgxNjR8bWFya2VyLTV8fCZjZW50ZXI9MzkuOTYwMjEwODAwMTcwOSwtODguOTM4NzA1NDQ0MzM1OTQmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209NCZyYW5kPTE2ODA3ODQzOTEmc2Vzc2lvbj02MDQ2NmE1NS0wM2IwLTY3NTAtMDJiNC0zMmI3LTEyNWQ4Y2I4YjEwNyIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MTE1MiwidGltZSI6NDE4NywiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX3N0cmFpZ2h0X3NtLmdpZiIsImRpcmVjdGlvbiI6N30seyJkaXN0YW5jZSI6OTguMjI0LCJzdHJlZXRzIjpbIkktNzIgVyIsIlVTLTM2IFciXSwibmFycmF0aXZlIjoiTWVyZ2Ugb250byBJLTcyIFcvVVMtMzYgVyB2aWEgRVhJVCAxMDNBIHRvd2FyZCBKYWNrc29udmlsbGUvU3QgTG91aXMuIiwidHVyblR5cGUiOjEwLCJzdGFydFBvaW50Ijp7ImxuZyI6LTg5LjU5NTY4LCJsYXQiOjM5LjgwMTk2NH0sImluZGV4Ijo0LCJmb3JtYXR0ZWRUaW1lIjoiMDE6MjU6MzQiLCJkaXJlY3Rpb25OYW1lIjoiV2VzdCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOlt7ImV4dHJhVGV4dCI6IiIsInRleHQiOiI3MiIsInR5cGUiOjEsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnMxLnBuZz9uPTcyJmQ9V0VTVCIsImRpcmVjdGlvbiI6N30seyJleHRyYVRleHQiOiIiLCJ0ZXh0IjoiMzYiLCJ0eXBlIjoyLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMi5wbmc/bj0zNiZkPVdFU1QiLCJkaXJlY3Rpb24iOjd9LHsiZXh0cmFUZXh0IjoiIiwidGV4dCI6IjEwM0EiLCJ0eXBlIjoxMDAxLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMTAwMS5wbmc/bj0xMDNBJmQ9UklHSFQiLCJkaXJlY3Rpb24iOjB9XSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9SElERV9NWV9EQVRBJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuODAxOTYzODA2MTUyMzQ0LC04OS41OTU2ODAyMzY4MTY0fG1hcmtlci01fHwzOS43NDk4Mzk3ODI3MTQ4NDQsLTkxLjI4NTQ1Mzc5NjM4NjcyfG1hcmtlci02fHwmY2VudGVyPTM5Ljc3NTkwMTc5NDQzMzU5NCwtOTAuNDQwNTY3MDE2NjAxNTYmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209NCZyYW5kPTE2ODA3ODQzOTEmc2Vzc2lvbj02MDQ2NmE1NS0wM2IwLTY3NTAtMDJiNC0zMmI3LTEyNWQ4Y2I4YjEwNyIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MTE1MiwidGltZSI6NTEzNCwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX21lcmdlX3JpZ2h0X3NtLmdpZiIsImRpcmVjdGlvbiI6N30seyJkaXN0YW5jZSI6MS4yNDEsInN0cmVldHMiOltdLCJuYXJyYXRpdmUiOiJUYWtlIHRoZSBJLTcyIFcgZXhpdCwgRVhJVCA0LCB0b3dhcmQgSGFubmliYWwuIiwidHVyblR5cGUiOjE0LCJzdGFydFBvaW50Ijp7ImxuZyI6LTkxLjI4NTQ1NCwibGF0IjozOS43NDk4NH0sImluZGV4Ijo1LCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDE6MTQiLCJkaXJlY3Rpb25OYW1lIjoiTm9ydGh3ZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W3siZXh0cmFUZXh0IjoiIiwidGV4dCI6IjQiLCJ0eXBlIjoxMDAxLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMTAwMS5wbmc/bj00JmQ9UklHSFQiLCJkaXJlY3Rpb24iOjB9XSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9SElERV9NWV9EQVRBJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzQ5ODM5NzgyNzE0ODQ0LC05MS4yODU0NTM3OTYzODY3MnxtYXJrZXItNnx8MzkuNzUxOTA3MzQ4NjMyODEsLTkxLjMwMDQyMjY2ODQ1NzAzfG1hcmtlci03fHwmY2VudGVyPTM5Ljc1MDg3MzU2NTY3MzgzLC05MS4yOTI5MzgyMzI0MjE4OCZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xMCZyYW5kPTE2ODA3ODQzOTEmc2Vzc2lvbj02MDQ2NmE1NS0wM2IwLTY3NTAtMDJiNC0zMmI3LTEyNWQ4Y2I4YjEwNyIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MTE1MiwidGltZSI6NzQsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9yc19ncl9leGl0cmlnaHRfc20uZ2lmIiwiZGlyZWN0aW9uIjoyfSx7ImRpc3RhbmNlIjoxNjIuMjM5LCJzdHJlZXRzIjpbIlVTLTM2IFciXSwibmFycmF0aXZlIjoiTWVyZ2Ugb250byBVUy0zNiBXIChDcm9zc2luZyBpbnRvIE1pc3NvdXJpKS4iLCJ0dXJuVHlwZSI6MTAsInN0YXJ0UG9pbnQiOnsibG5nIjotOTEuMzAwNDIzLCJsYXQiOjM5Ljc1MTkwN30sImluZGV4Ijo2LCJmb3JtYXR0ZWRUaW1lIjoiMDI6MzI6MDQiLCJkaXJlY3Rpb25OYW1lIjoiV2VzdCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOlt7ImV4dHJhVGV4dCI6IiIsInRleHQiOiIzNiIsInR5cGUiOjIsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnMyLnBuZz9uPTM2JmQ9V0VTVCIsImRpcmVjdGlvbiI6N31dLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1ISURFX01ZX0RBVEEmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43NTE5MDczNDg2MzI4MSwtOTEuMzAwNDIyNjY4NDU3MDN8bWFya2VyLTd8fDM5Ljc1MzkxNzY5NDA5MTgsLTk0LjIyMTMzNjM2NDc0NjF8bWFya2VyLTh8fCZjZW50ZXI9MzkuNzUyOTEyNTIxMzYyMzA1LC05Mi43NjA4Nzk1MTY2MDE1NiZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0zJnJhbmQ9MTY4MDc4NDM5MSZzZXNzaW9uPTYwNDY2YTU1LTAzYjAtNjc1MC0wMmI0LTMyYjctMTI1ZDhjYjhiMTA3IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjoxMTUyLCJ0aW1lIjo5MTI0LCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfbWVyZ2VfcmlnaHRfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjowLjAxNiwic3RyZWV0cyI6W10sIm5hcnJhdGl2ZSI6IlR1cm4gbGVmdC4iLCJ0dXJuVHlwZSI6Niwic3RhcnRQb2ludCI6eyJsbmciOi05NC4yMjEzMzYsImxhdCI6MzkuNzUzOTE4fSwiaW5kZXgiOjcsImZvcm1hdHRlZFRpbWUiOiIwMDowMDowNyIsImRpcmVjdGlvbk5hbWUiOiJTb3V0aCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1ISURFX01ZX0RBVEEmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43NTM5MTc2OTQwOTE4LC05NC4yMjEzMzYzNjQ3NDYxfG1hcmtlci04fHwzOS43NTM2OTI2MjY5NTMxMjUsLTk0LjIyMTM2Njg4MjMyNDIyfG1hcmtlci05fHwmY2VudGVyPTM5Ljc1MzgwNTE2MDUyMjQ2LC05NC4yMjEzNTE2MjM1MzUxNiZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNSZyYW5kPTE2ODA3ODQzOTEmc2Vzc2lvbj02MDQ2NmE1NS0wM2IwLTY3NTAtMDJiNC0zMmI3LTEyNWQ4Y2I4YjEwNyIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MCwidGltZSI6NywiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX2xlZnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo0fSx7ImRpc3RhbmNlIjo0NS42MDksInN0cmVldHMiOlsiSS0zNSBTIl0sIm5hcnJhdGl2ZSI6Ik1lcmdlIG9udG8gSS0zNSBTIHZpYSB0aGUgcmFtcCBvbiB0aGUgbGVmdC4iLCJ0dXJuVHlwZSI6MTEsInN0YXJ0UG9pbnQiOnsibG5nIjotOTQuMjIxMzY3LCJsYXQiOjM5Ljc1MzY5M30sImluZGV4Ijo4LCJmb3JtYXR0ZWRUaW1lIjoiMDA6NDA6MjEiLCJkaXJlY3Rpb25OYW1lIjoiU291dGgiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbeyJleHRyYVRleHQiOiIiLCJ0ZXh0IjoiMzUiLCJ0eXBlIjoxLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMS5wbmc/bj0zNSZkPVNPVVRIIiwiZGlyZWN0aW9uIjo0fV0sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljc1MzY5MjYyNjk1MzEyNSwtOTQuMjIxMzY2ODgyMzI0MjJ8bWFya2VyLTl8fDM5LjE3MjE5OTI0OTI2NzU4LC05NC41NTQyNDQ5OTUxMTcxOXxtYXJrZXItMTB8fCZjZW50ZXI9MzkuNDYyOTQ1OTM4MTEwMzUsLTk0LjM4NzgwNTkzODcyMDcmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209NCZyYW5kPTE2ODA3ODQzOTEmc2Vzc2lvbj02MDQ2NmE1NS0wM2IwLTY3NTAtMDJiNC0zMmI3LTEyNWQ4Y2I4YjEwNyIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MTE1MiwidGltZSI6MjQyMSwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX21lcmdlX2xlZnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo0fSx7ImRpc3RhbmNlIjozLjQ0OCwic3RyZWV0cyI6WyJJLTI5IE4iLCJVUy03MSBOIl0sIm5hcnJhdGl2ZSI6Ik1lcmdlIG9udG8gSS0yOSBOL1VTLTcxIE4gdmlhIEVYSVQgOEIgdG93YXJkIEtDSSBBaXJwb3J0LiIsInR1cm5UeXBlIjoxMCwic3RhcnRQb2ludCI6eyJsbmciOi05NC41NTQyNDUsImxhdCI6MzkuMTcyMTk5fSwiaW5kZXgiOjksImZvcm1hdHRlZFRpbWUiOiIwMDowNDowNSIsImRpcmVjdGlvbk5hbWUiOiJOb3J0aCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOlt7ImV4dHJhVGV4dCI6IiIsInRleHQiOiIyOSIsInR5cGUiOjEsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnMxLnBuZz9uPTI5JmQ9Tk9SVEgiLCJkaXJlY3Rpb24iOjF9LHsiZXh0cmFUZXh0IjoiIiwidGV4dCI6IjcxIiwidHlwZSI6MiwidXJsIjoiaHR0cDovL2ljb25zLm1xY2RuLmNvbS9pY29ucy9yczIucG5nP249NzEmZD1OT1JUSCIsImRpcmVjdGlvbiI6MX0seyJleHRyYVRleHQiOiIiLCJ0ZXh0IjoiOEIiLCJ0eXBlIjoxMDAxLCJ1cmwiOiJodHRwOi8vaWNvbnMubXFjZG4uY29tL2ljb25zL3JzMTAwMS5wbmc/bj04QiZkPVJJR0hUIiwiZGlyZWN0aW9uIjowfV0sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5LjE3MjE5OTI0OTI2NzU4LC05NC41NTQyNDQ5OTUxMTcxOXxtYXJrZXItMTB8fDM5LjE4OTk5MDk5NzMxNDQ1LC05NC42MTEyNjcwODk4NDM3NXxtYXJrZXItMTF8fCZjZW50ZXI9MzkuMTgxMDk1MTIzMjkxMDE2LC05NC41ODI3NTYwNDI0ODA0NyZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT05JnJhbmQ9MTY4MDc4NDM5MSZzZXNzaW9uPTYwNDY2YTU1LTAzYjAtNjc1MC0wMmI0LTMyYjctMTI1ZDhjYjhiMTA3IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjoxMTUyLCJ0aW1lIjoyNDUsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9yc19tZXJnZV9yaWdodF9zbS5naWYiLCJkaXJlY3Rpb24iOjF9LHsiZGlzdGFuY2UiOjcuNzQxLCJzdHJlZXRzIjpbIkktNjM1IFMiXSwibmFycmF0aXZlIjoiTWVyZ2Ugb250byBJLTYzNSBTIHZpYSBFWElUIDNCIG9uIHRoZSBsZWZ0IHRvd2FyZCBLYW5zYXMgKENyb3NzaW5nIGludG8gS2Fuc2FzKS4iLCJ0dXJuVHlwZSI6MTEsInN0YXJ0UG9pbnQiOnsibG5nIjotOTQuNjExMjY3LCJsYXQiOjM5LjE4OTk5MX0sImluZGV4IjoxMCwiZm9ybWF0dGVkVGltZSI6IjAwOjA3OjMxIiwiZGlyZWN0aW9uTmFtZSI6IlNvdXRoIiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W3siZXh0cmFUZXh0IjoiIiwidGV4dCI6IjYzNSIsInR5cGUiOjEsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnMxLnBuZz9uPTYzNSZkPVNPVVRIIiwiZGlyZWN0aW9uIjo0fSx7ImV4dHJhVGV4dCI6IiIsInRleHQiOiIzQiIsInR5cGUiOjEwMDEsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnMxMDAxLnBuZz9uPTNCJmQ9TEVGVCIsImRpcmVjdGlvbiI6MH1dLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1ISURFX01ZX0RBVEEmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS4xODk5OTA5OTczMTQ0NSwtOTQuNjExMjY3MDg5ODQzNzV8bWFya2VyLTExfHwzOS4xMDk3NzU1NDMyMTI4OSwtOTQuNjgxODYxODc3NDQxNHxtYXJrZXItMTJ8fCZjZW50ZXI9MzkuMTQ5ODgzMjcwMjYzNjcsLTk0LjY0NjU2NDQ4MzY0MjU4JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTcmcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjExNTIsInRpbWUiOjQ1MSwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX21lcmdlX2xlZnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo0fSx7ImRpc3RhbmNlIjo1OTMuNDc2LCJzdHJlZXRzIjpbIkktNzAgVyJdLCJuYXJyYXRpdmUiOiJNZXJnZSBvbnRvIEktNzAgVyB2aWEgRVhJVCA0QiB0b3dhcmQgVG9wZWthIChQb3J0aW9ucyB0b2xsKSAoQ3Jvc3NpbmcgaW50byBDb2xvcmFkbykuIiwidHVyblR5cGUiOjEwLCJzdGFydFBvaW50Ijp7ImxuZyI6LTk0LjY4MTg2MiwibGF0IjozOS4xMDk3NzZ9LCJpbmRleCI6MTEsImZvcm1hdHRlZFRpbWUiOiIwODowNjo1MyIsImRpcmVjdGlvbk5hbWUiOiJXZXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W3siZXh0cmFUZXh0IjoiIiwidGV4dCI6IjcwIiwidHlwZSI6MSwidXJsIjoiaHR0cDovL2ljb25zLm1xY2RuLmNvbS9pY29ucy9yczEucG5nP249NzAmZD1XRVNUIiwiZGlyZWN0aW9uIjo3fSx7ImV4dHJhVGV4dCI6IiIsInRleHQiOiI0QiIsInR5cGUiOjEwMDEsInVybCI6Imh0dHA6Ly9pY29ucy5tcWNkbi5jb20vaWNvbnMvcnMxMDAxLnBuZz9uPTRCJmQ9UklHSFQiLCJkaXJlY3Rpb24iOjB9XSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9SElERV9NWV9EQVRBJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuMTA5Nzc1NTQzMjEyODksLTk0LjY4MTg2MTg3NzQ0MTR8bWFya2VyLTEyfHwzOS43Nzk3MDUwNDc2MDc0MiwtMTA0Ljk3NjEwNDczNjMyODEyfG1hcmtlci0xM3x8JmNlbnRlcj0zOS40NDQ3NDAyOTU0MTAxNTYsLTk5LjgyODk4MzMwNjg4NDc3JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTImcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjExNTMsInRpbWUiOjI5MjEzLCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfbWVyZ2VfcmlnaHRfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjowLjQ4Nywic3RyZWV0cyI6W10sIm5hcnJhdGl2ZSI6IlRha2UgdGhlIEktMjUgZXhpdCwgRVhJVCAyNzQsIHRvd2FyZCBDb2xvIFNwcmluZ3MvRm9ydCBDb2xsaW5zLiIsInR1cm5UeXBlIjoxNCwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTc2MTA1LCJsYXQiOjM5Ljc3OTcwNX0sImluZGV4IjoxMiwiZm9ybWF0dGVkVGltZSI6IjAwOjAwOjQwIiwiZGlyZWN0aW9uTmFtZSI6Ildlc3QiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbeyJleHRyYVRleHQiOiIiLCJ0ZXh0IjoiMjc0IiwidHlwZSI6MTAwMSwidXJsIjoiaHR0cDovL2ljb25zLm1xY2RuLmNvbS9pY29ucy9yczEwMDEucG5nP249Mjc0JmQ9UklHSFQiLCJkaXJlY3Rpb24iOjB9XSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9SElERV9NWV9EQVRBJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzc5NzA1MDQ3NjA3NDIsLTEwNC45NzYxMDQ3MzYzMjgxMnxtYXJrZXItMTN8fDM5Ljc4MDAyMTY2NzQ4MDQ3LC0xMDQuOTg1MjI5NDkyMTg3NXxtYXJrZXItMTR8fCZjZW50ZXI9MzkuNzc5ODYzMzU3NTQzOTQ1LC0xMDQuOTgwNjY3MTE0MjU3ODEmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTEmcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjEwMjQsInRpbWUiOjQwLCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfZ3JfZXhpdHJpZ2h0X3NtLmdpZiIsImRpcmVjdGlvbiI6N30seyJkaXN0YW5jZSI6MC4xNzcsInN0cmVldHMiOltdLCJuYXJyYXRpdmUiOiJLZWVwIGxlZnQgdG8gdGFrZSB0aGUgSS0yNSBTIHJhbXAgdG93YXJkIENvbG8gU3Bncy9JLTcwIFcvUGVjb3MgU3QuIiwidHVyblR5cGUiOjEzLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNC45ODUyMjksImxhdCI6MzkuNzgwMDIyfSwiaW5kZXgiOjEzLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTUiLCJkaXJlY3Rpb25OYW1lIjoiV2VzdCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1ISURFX01ZX0RBVEEmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43ODAwMjE2Njc0ODA0NywtMTA0Ljk4NTIyOTQ5MjE4NzV8bWFya2VyLTE0fHwzOS43ODA3MjczODY0NzQ2MSwtMTA0Ljk4ODM2NTE3MzMzOTg0fG1hcmtlci0xNXx8JmNlbnRlcj0zOS43ODAzNzQ1MjY5Nzc1NCwtMTA0Ljk4Njc5NzMzMjc2MzY3JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTEzJnJhbmQ9MTY4MDc4NDM5MSZzZXNzaW9uPTYwNDY2YTU1LTAzYjAtNjc1MC0wMmI0LTMyYjctMTI1ZDhjYjhiMTA3IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjoxMDI0LCJ0aW1lIjoxNSwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX3JhbXBfc20uZ2lmIiwiZGlyZWN0aW9uIjo3fSx7ImRpc3RhbmNlIjowLjUyLCJzdHJlZXRzIjpbXSwibmFycmF0aXZlIjoiS2VlcCBsZWZ0IGF0IHRoZSBmb3JrIGluIHRoZSByYW1wLiIsInR1cm5UeXBlIjoxNywic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTg4MzY1LCJsYXQiOjM5Ljc4MDcyN30sImluZGV4IjoxNCwiZm9ybWF0dGVkVGltZSI6IjAwOjAwOjUxIiwiZGlyZWN0aW9uTmFtZSI6IlNvdXRoIiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljc4MDcyNzM4NjQ3NDYxLC0xMDQuOTg4MzY1MTczMzM5ODR8bWFya2VyLTE1fHwzOS43NzQ1NjI4MzU2OTMzNiwtMTA0Ljk5MDIzNDM3NXxtYXJrZXItMTZ8fCZjZW50ZXI9MzkuNzc3NjQ1MTExMDgzOTg0LC0xMDQuOTg5Mjk5Nzc0MTY5OTImZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTAmcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjUxLCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfZm9ya19sZWZ0Ml9zbS5naWYiLCJkaXJlY3Rpb24iOjR9LHsiZGlzdGFuY2UiOjAuMTI2LCJzdHJlZXRzIjpbXSwibmFycmF0aXZlIjoiS2VlcCByaWdodCBhdCB0aGUgZm9yayBpbiB0aGUgcmFtcC4iLCJ0dXJuVHlwZSI6MTYsInN0YXJ0UG9pbnQiOnsibG5nIjotMTA0Ljk5MDIzNCwibGF0IjozOS43NzQ1NjN9LCJpbmRleCI6MTUsImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxMiIsImRpcmVjdGlvbk5hbWUiOiJTb3V0aCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1ISURFX01ZX0RBVEEmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43NzQ1NjI4MzU2OTMzNiwtMTA0Ljk5MDIzNDM3NXxtYXJrZXItMTZ8fDM5Ljc3Mjc2MjI5ODU4Mzk4NCwtMTA0Ljk5MDUzOTU1MDc4MTI1fG1hcmtlci0xN3x8JmNlbnRlcj0zOS43NzM2NjI1NjcxMzg2NywtMTA0Ljk5MDM4Njk2Mjg5MDYyJmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTEyJnJhbmQ9MTY4MDc4NDM5MSZzZXNzaW9uPTYwNDY2YTU1LTAzYjAtNjc1MC0wMmI0LTMyYjctMTI1ZDhjYjhiMTA3IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjowLCJ0aW1lIjoxMiwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX2ZvcmtfcmlnaHQyX3NtLmdpZiIsImRpcmVjdGlvbiI6NH0seyJkaXN0YW5jZSI6MS4xODUsInN0cmVldHMiOlsiUGFyayBBdmUiXSwibmFycmF0aXZlIjoiTWVyZ2Ugb250byBQYXJrIEF2ZSB0b3dhcmQgRG93bnRvd24uIiwidHVyblR5cGUiOjEwLCJzdGFydFBvaW50Ijp7ImxuZyI6LTEwNC45OTA1NCwibGF0IjozOS43NzI3NjJ9LCJpbmRleCI6MTYsImZvcm1hdHRlZFRpbWUiOiIwMDowMjowNCIsImRpcmVjdGlvbk5hbWUiOiJTb3V0aHdlc3QiLCJtYW5ldXZlck5vdGVzIjpbXSwibGlua0lkcyI6W10sInNpZ25zIjpbXSwibWFwVXJsIjoiaHR0cDovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9SElERV9NWV9EQVRBJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzcyNzYyMjk4NTgzOTg0LC0xMDQuOTkwNTM5NTUwNzgxMjV8bWFya2VyLTE3fHwzOS43NTcwNjEwMDQ2Mzg2NywtMTA0Ljk5MjkwNDY2MzA4NTk0fG1hcmtlci0xOHx8JmNlbnRlcj0zOS43NjQ5MTE2NTE2MTEzMywtMTA0Ljk5MTcyMjEwNjkzMzYmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209OSZyYW5kPTE2ODA3ODQzOTEmc2Vzc2lvbj02MDQ2NmE1NS0wM2IwLTY3NTAtMDJiNC0zMmI3LTEyNWQ4Y2I4YjEwNyIsInRyYW5zcG9ydE1vZGUiOiJBVVRPIiwiYXR0cmlidXRlcyI6MTAyNCwidGltZSI6MTI0LCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfbWVyZ2VfcmlnaHRfc20uZ2lmIiwiZGlyZWN0aW9uIjo2fSx7ImRpc3RhbmNlIjowLjQyMywic3RyZWV0cyI6WyIyMm5kIFN0Il0sIm5hcnJhdGl2ZSI6IlBhcmsgQXZlIGJlY29tZXMgMjJuZCBTdC4iLCJ0dXJuVHlwZSI6MCwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTkyOTA1LCJsYXQiOjM5Ljc1NzA2MX0sImluZGV4IjoxNywiZm9ybWF0dGVkVGltZSI6IjAwOjAxOjE3IiwiZGlyZWN0aW9uTmFtZSI6IlNvdXRoZWFzdCIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJtYXBVcmwiOiJodHRwOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1ISURFX01ZX0RBVEEmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43NTcwNjEwMDQ2Mzg2NywtMTA0Ljk5MjkwNDY2MzA4NTk0fG1hcmtlci0xOHx8MzkuNzUyNjQ3Mzk5OTAyMzQ0LC0xMDQuOTg3NDExNDk5MDIzNDR8bWFya2VyLTE5fHwmY2VudGVyPTM5Ljc1NDg1NDIwMjI3MDUxLC0xMDQuOTkwMTU4MDgxMDU0NjkmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTEmcmFuZD0xNjgwNzg0MzkxJnNlc3Npb249NjA0NjZhNTUtMDNiMC02NzUwLTAyYjQtMzJiNy0xMjVkOGNiOGIxMDciLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjc3LCJpY29uVXJsIjoiaHR0cDovL2NvbnRlbnQubXFjZG4uY29tL21xc2l0ZS90dXJuc2lnbnMvcnNfc3RyYWlnaHRfc20uZ2lmIiwiZGlyZWN0aW9uIjo1fSx7ImRpc3RhbmNlIjowLjk3OCwic3RyZWV0cyI6WyJOIEJyb2Fkd2F5Il0sIm5hcnJhdGl2ZSI6IlR1cm4gc2xpZ2h0IHJpZ2h0IG9udG8gTiBCcm9hZHdheS4iLCJ0dXJuVHlwZSI6MSwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTg3NDExLCJsYXQiOjM5Ljc1MjY0N30sImluZGV4IjoxOCwiZm9ybWF0dGVkVGltZSI6IjAwOjAyOjQyIiwiZGlyZWN0aW9uTmFtZSI6IlNvdXRoIiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljc1MjY0NzM5OTkwMjM0NCwtMTA0Ljk4NzQxMTQ5OTAyMzQ0fG1hcmtlci0xOXx8MzkuNzM4NDcxOTg0ODYzMjgsLTEwNC45ODczNzMzNTIwNTA3OHxtYXJrZXItMjB8fCZjZW50ZXI9MzkuNzQ1NTU5NjkyMzgyODEsLTEwNC45ODczOTI0MjU1MzcxMSZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT05JnJhbmQ9MTY4MDc4NDM5MSZzZXNzaW9uPTYwNDY2YTU1LTAzYjAtNjc1MC0wMmI0LTMyYjctMTI1ZDhjYjhiMTA3IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjowLCJ0aW1lIjoxNjIsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9yc19zbGlnaHRfcmlnaHRfc20uZ2lmIiwiZGlyZWN0aW9uIjo0fSx7ImRpc3RhbmNlIjowLjEzNCwic3RyZWV0cyI6WyJFIDE0dGggQXZlIl0sIm5hcnJhdGl2ZSI6IlR1cm4gbGVmdCBvbnRvIEUgMTR0aCBBdmUuIiwidHVyblR5cGUiOjYsInN0YXJ0UG9pbnQiOnsibG5nIjotMTA0Ljk4NzM3MywibGF0IjozOS43Mzg0NzJ9LCJpbmRleCI6MTksImZvcm1hdHRlZFRpbWUiOiIwMDowMDoyMCIsImRpcmVjdGlvbk5hbWUiOiJFYXN0IiwibWFuZXV2ZXJOb3RlcyI6W10sImxpbmtJZHMiOltdLCJzaWducyI6W10sIm1hcFVybCI6Imh0dHA6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PUhJREVfTVlfREFUQSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5LjczODQ3MTk4NDg2MzI4LC0xMDQuOTg3MzczMzUyMDUwNzh8bWFya2VyLTIwfHwzOS43Mzg0NTI5MTEzNzY5NSwtMTA0Ljk4NDg1NTY1MTg1NTQ3fG1hcmtlci0yMXx8JmNlbnRlcj0zOS43Mzg0NjI0NDgxMjAxMiwtMTA0Ljk4NjExNDUwMTk1MzEyJmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTEzJnJhbmQ9MTY4MDc4NDM5MSZzZXNzaW9uPTYwNDY2YTU1LTAzYjAtNjc1MC0wMmI0LTMyYjctMTI1ZDhjYjhiMTA3IiwidHJhbnNwb3J0TW9kZSI6IkFVVE8iLCJhdHRyaWJ1dGVzIjowLCJ0aW1lIjoyMCwiaWNvblVybCI6Imh0dHA6Ly9jb250ZW50Lm1xY2RuLmNvbS9tcXNpdGUvdHVybnNpZ25zL3JzX2xlZnRfc20uZ2lmIiwiZGlyZWN0aW9uIjo4fSx7ImRpc3RhbmNlIjowLCJzdHJlZXRzIjpbXSwibmFycmF0aXZlIjoiV2VsY29tZSB0byBERU5WRVIsIENPLiIsInR1cm5UeXBlIjotMSwic3RhcnRQb2ludCI6eyJsbmciOi0xMDQuOTg0ODU2LCJsYXQiOjM5LjczODQ1M30sImluZGV4IjoyMCwiZm9ybWF0dGVkVGltZSI6IjAwOjAwOjAwIiwiZGlyZWN0aW9uTmFtZSI6IiIsIm1hbmV1dmVyTm90ZXMiOltdLCJsaW5rSWRzIjpbXSwic2lnbnMiOltdLCJ0cmFuc3BvcnRNb2RlIjoiQVVUTyIsImF0dHJpYnV0ZXMiOjAsInRpbWUiOjAsImljb25VcmwiOiJodHRwOi8vY29udGVudC5tcWNkbi5jb20vbXFzaXRlL3R1cm5zaWducy9pY29uLWRpcnMtZW5kX3NtLmdpZiIsImRpcmVjdGlvbiI6MH1dLCJoYXNGZXJyeSI6ZmFsc2V9XSwib3B0aW9ucyI6eyJhcnRlcnlXZWlnaHRzIjpbXSwiY3ljbGluZ1JvYWRGYWN0b3IiOjEsInRpbWVUeXBlIjowLCJ1c2VUcmFmZmljIjpmYWxzZSwicmV0dXJuTGlua0RpcmVjdGlvbnMiOmZhbHNlLCJjb3VudHJ5Qm91bmRhcnlEaXNwbGF5Ijp0cnVlLCJlbmhhbmNlZE5hcnJhdGl2ZSI6ZmFsc2UsImxvY2FsZSI6ImVuX1VTIiwidHJ5QXZvaWRMaW5rSWRzIjpbXSwiZHJpdmluZ1N0eWxlIjoyLCJkb1JldmVyc2VHZW9jb2RlIjp0cnVlLCJnZW5lcmFsaXplIjotMSwibXVzdEF2b2lkTGlua0lkcyI6W10sInNpZGVPZlN0cmVldERpc3BsYXkiOnRydWUsInJvdXRlVHlwZSI6IkZBU1RFU1QiLCJhdm9pZFRpbWVkQ29uZGl0aW9ucyI6ZmFsc2UsInJvdXRlTnVtYmVyIjowLCJzaGFwZUZvcm1hdCI6InJhdyIsIm1heFdhbGtpbmdEaXN0YW5jZSI6LTEsImRlc3RpbmF0aW9uTWFuZXV2ZXJEaXNwbGF5Ijp0cnVlLCJ0cmFuc2ZlclBlbmFsdHkiOi0xLCJuYXJyYXRpdmVUeXBlIjoidGV4dCIsIndhbGtpbmdTcGVlZCI6LTEsInVyYmFuQXZvaWRGYWN0b3IiOi0xLCJzdGF0ZUJvdW5kYXJ5RGlzcGxheSI6dHJ1ZSwidW5pdCI6Ik0iLCJoaWdod2F5RWZmaWNpZW5jeSI6MjIsIm1heExpbmtJZCI6MCwibWFuZXV2ZXJQZW5hbHR5IjotMSwiYXZvaWRUcmlwSWRzIjpbXSwiZmlsdGVyWm9uZUZhY3RvciI6LTEsIm1hbm1hcHMiOiJ0cnVlIn0sImxvY2F0aW9ucyI6W3siZHJhZ1BvaW50IjpmYWxzZSwiZGlzcGxheUxhdExuZyI6eyJsbmciOi04OC4yNDM1MjMsImxhdCI6NDAuMTE2MzI5fSwiYWRtaW5BcmVhNCI6IkNoYW1wYWlnbiBDb3VudHkiLCJhZG1pbkFyZWE1IjoiQ2hhbXBhaWduIiwicG9zdGFsQ29kZSI6IiIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTMiOiJJTCIsInR5cGUiOiJzIiwic2lkZU9mU3RyZWV0IjoiTiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJsaW5rSWQiOjMzNDk1ODcwLCJzdHJlZXQiOiIiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwibGF0TG5nIjp7ImxuZyI6LTg4LjI0MzUyMiwibGF0Ijo0MC4xMTYzMjh9fSx7ImRyYWdQb2ludCI6ZmFsc2UsImRpc3BsYXlMYXRMbmciOnsibG5nIjotMTA0Ljk4NDg1NiwibGF0IjozOS43Mzg0NTN9LCJhZG1pbkFyZWE0IjoiRGVudmVyIENvdW50eSIsImFkbWluQXJlYTUiOiJEZW52ZXIiLCJwb3N0YWxDb2RlIjoiIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMyI6IkNPIiwidHlwZSI6InMiLCJzaWRlT2ZTdHJlZXQiOiJOIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImxpbmtJZCI6NDAyODc4MTksInN0cmVldCI6IiIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJsYXRMbmciOnsibG5nIjotMTA0Ljk4NDg1MywibGF0IjozOS43Mzg0NTN9fV0sInRpbWUiOjUxNTc3LCJoYXNVbnBhdmVkIjpmYWxzZSwibG9jYXRpb25TZXF1ZW5jZSI6WzAsMV0sImhhc0ZlcnJ5IjpmYWxzZX0sImluZm8iOnsic3RhdHVzY29kZSI6MCwiY29weXJpZ2h0Ijp7ImltYWdlQWx0VGV4dCI6IsKpIDIwMjEgTWFwUXVlc3QsIEluYy4iLCJpbWFnZVVybCI6Imh0dHA6Ly9hcGkubXFjZG4uY29tL3Jlcy9tcWxvZ28uZ2lmIiwidGV4dCI6IsKpIDIwMjEgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOltdfX0=
+  recorded_at: Mon, 08 Mar 2021 17:26:53 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/onecall?appid=HIDE_DATA&exclude=minutely,alerts&lat=39.738453&lon=-104.984853&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 08 Mar 2021 18:17:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '16131'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/onecall?exclude=minutely%2Calerts&lat=39.74&lon=-104.98&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"lat":39.7385,"lon":-104.9849,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1615227441,"sunrise":1615209724,"sunset":1615251567,"temp":51.71,"feels_like":46.04,"pressure":1016,"humidity":42,"dew_point":29.7,"uvi":3.22,"clouds":100,"visibility":10000,"wind_speed":3.06,"wind_deg":190,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}]},"hourly":[{"dt":1615226400,"temp":51.71,"feels_like":46.04,"pressure":1016,"humidity":42,"dew_point":29.7,"uvi":3.22,"clouds":100,"visibility":10000,"wind_speed":3.06,"wind_deg":190,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615230000,"temp":56.17,"feels_like":50.11,"pressure":1015,"humidity":35,"dew_point":29.28,"uvi":4.15,"clouds":100,"visibility":10000,"wind_speed":3.67,"wind_deg":134,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615233600,"temp":61.2,"feels_like":54.64,"pressure":1014,"humidity":28,"dew_point":28.35,"uvi":3.78,"clouds":100,"visibility":10000,"wind_speed":4.27,"wind_deg":225,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615237200,"temp":64.29,"feels_like":56.93,"pressure":1012,"humidity":26,"dew_point":29.1,"uvi":2.82,"clouds":100,"visibility":10000,"wind_speed":5.93,"wind_deg":231,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615240800,"temp":65.25,"feels_like":57.96,"pressure":1012,"humidity":25,"dew_point":28.98,"uvi":2.05,"clouds":99,"visibility":10000,"wind_speed":5.75,"wind_deg":226,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615244400,"temp":63.99,"feels_like":56.91,"pressure":1012,"humidity":26,"dew_point":20.52,"uvi":0.85,"clouds":99,"visibility":10000,"wind_speed":5.35,"wind_deg":325,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615248000,"temp":62.04,"feels_like":53.01,"pressure":1012,"humidity":29,"dew_point":23.43,"uvi":0.21,"clouds":98,"visibility":10000,"wind_speed":9.06,"wind_deg":359,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615251600,"temp":58.21,"feels_like":52.32,"pressure":1013,"humidity":35,"dew_point":28.06,"uvi":0,"clouds":5,"visibility":10000,"wind_speed":3.78,"wind_deg":327,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615255200,"temp":56.26,"feels_like":51.44,"pressure":1014,"humidity":38,"dew_point":28.81,"uvi":0,"clouds":3,"visibility":10000,"wind_speed":1.97,"wind_deg":188,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615258800,"temp":54.7,"feels_like":48.18,"pressure":1014,"humidity":40,"dew_point":27.68,"uvi":0,"clouds":2,"visibility":10000,"wind_speed":4.94,"wind_deg":172,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615262400,"temp":52.7,"feels_like":45.86,"pressure":1014,"humidity":42,"dew_point":27.1,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":5.37,"wind_deg":191,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615266000,"temp":50.86,"feels_like":43.9,"pressure":1014,"humidity":45,"dew_point":26.94,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":5.59,"wind_deg":214,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615269600,"temp":49.44,"feels_like":42.28,"pressure":1014,"humidity":48,"dew_point":26.58,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":6.02,"wind_deg":210,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615273200,"temp":48.13,"feels_like":40.66,"pressure":1014,"humidity":50,"dew_point":25.95,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":6.51,"wind_deg":211,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615276800,"temp":47.37,"feels_like":39.15,"pressure":1013,"humidity":51,"dew_point":25.23,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":7.81,"wind_deg":205,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0},{"dt":1615280400,"temp":46.89,"feels_like":38.48,"pressure":1013,"humidity":52,"dew_point":25.27,"uvi":0,"clouds":25,"visibility":10000,"wind_speed":8.12,"wind_deg":199,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1615284000,"temp":46.08,"feels_like":36.84,"pressure":1012,"humidity":53,"dew_point":25.27,"uvi":0,"clouds":33,"visibility":10000,"wind_speed":9.53,"wind_deg":198,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1615287600,"temp":45.23,"feels_like":36.91,"pressure":1012,"humidity":55,"dew_point":24.51,"uvi":0,"clouds":26,"visibility":10000,"wind_speed":7.94,"wind_deg":196,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0},{"dt":1615291200,"temp":44.51,"feels_like":36.75,"pressure":1012,"humidity":56,"dew_point":23.32,"uvi":0,"clouds":22,"visibility":10000,"wind_speed":6.87,"wind_deg":203,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02n"}],"pop":0},{"dt":1615294800,"temp":44.24,"feels_like":36.97,"pressure":1012,"humidity":55,"dew_point":21.29,"uvi":0,"clouds":62,"visibility":10000,"wind_speed":5.86,"wind_deg":208,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"pop":0},{"dt":1615298400,"temp":44.46,"feels_like":37.51,"pressure":1012,"humidity":53,"dew_point":19.51,"uvi":0.19,"clouds":81,"visibility":10000,"wind_speed":5.12,"wind_deg":221,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"pop":0},{"dt":1615302000,"temp":47.17,"feels_like":41.49,"pressure":1011,"humidity":47,"dew_point":18.03,"uvi":0.79,"clouds":87,"visibility":10000,"wind_speed":2.77,"wind_deg":243,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615305600,"temp":50.63,"feels_like":44.33,"pressure":1011,"humidity":41,"dew_point":17.44,"uvi":1.75,"clouds":90,"visibility":10000,"wind_speed":3.83,"wind_deg":203,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615309200,"temp":54.41,"feels_like":48.27,"pressure":1010,"humidity":36,"dew_point":17.15,"uvi":2.99,"clouds":92,"visibility":10000,"wind_speed":3.58,"wind_deg":183,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615312800,"temp":58.12,"feels_like":53.8,"pressure":1009,"humidity":31,"dew_point":17.42,"uvi":3.99,"clouds":94,"visibility":10000,"wind_speed":0.27,"wind_deg":335,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615316400,"temp":59.47,"feels_like":51.96,"pressure":1008,"humidity":30,"dew_point":18.18,"uvi":4.63,"clouds":100,"visibility":10000,"wind_speed":6.02,"wind_deg":53,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615320000,"temp":60.85,"feels_like":52.29,"pressure":1007,"humidity":29,"dew_point":19.8,"uvi":4.22,"clouds":100,"visibility":10000,"wind_speed":7.99,"wind_deg":68,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615323600,"temp":61.52,"feels_like":51.08,"pressure":1006,"humidity":29,"dew_point":21.09,"uvi":3.16,"clouds":100,"visibility":10000,"wind_speed":11.45,"wind_deg":75,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615327200,"temp":61.07,"feels_like":50.54,"pressure":1006,"humidity":29,"dew_point":21.85,"uvi":2.09,"clouds":98,"visibility":10000,"wind_speed":11.5,"wind_deg":78,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"pop":0},{"dt":1615330800,"temp":59.97,"feels_like":50.02,"pressure":1006,"humidity":31,"dew_point":22.86,"uvi":0.88,"clouds":80,"visibility":10000,"wind_speed":10.65,"wind_deg":74,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"pop":0},{"dt":1615334400,"temp":58.37,"feels_like":47.77,"pressure":1006,"humidity":34,"dew_point":25.12,"uvi":0.22,"clouds":67,"visibility":10000,"wind_speed":11.99,"wind_deg":73,"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04d"}],"pop":0},{"dt":1615338000,"temp":54.21,"feels_like":43.09,"pressure":1007,"humidity":39,"dew_point":25.2,"uvi":0,"clouds":5,"visibility":10000,"wind_speed":12.84,"wind_deg":73,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0.07},{"dt":1615341600,"temp":52.36,"feels_like":45.36,"pressure":1007,"humidity":41,"dew_point":23.43,"uvi":0,"clouds":9,"visibility":10000,"wind_speed":5.44,"wind_deg":76,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.15},{"dt":1615345200,"temp":51.17,"feels_like":45.05,"pressure":1007,"humidity":43,"dew_point":23.56,"uvi":0,"clouds":5,"visibility":10000,"wind_speed":3.89,"wind_deg":44,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.11},{"dt":1615348800,"temp":49.53,"feels_like":41.77,"pressure":1007,"humidity":46,"dew_point":23.81,"uvi":0,"clouds":14,"visibility":10000,"wind_speed":6.85,"wind_deg":42,"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02n"}],"pop":0.11},{"dt":1615352400,"temp":48.11,"feels_like":40.28,"pressure":1007,"humidity":49,"dew_point":23.68,"uvi":0,"clouds":31,"visibility":10000,"wind_speed":7.02,"wind_deg":57,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0.15},{"dt":1615356000,"temp":46.49,"feels_like":39.13,"pressure":1006,"humidity":52,"dew_point":23.58,"uvi":0,"clouds":25,"visibility":10000,"wind_speed":6.2,"wind_deg":54,"weather":[{"id":802,"main":"Clouds","description":"scattered
+        clouds","icon":"03n"}],"pop":0.19},{"dt":1615359600,"temp":45.64,"feels_like":37.51,"pressure":1006,"humidity":54,"dew_point":24.91,"uvi":0,"clouds":1,"visibility":10000,"wind_speed":7.58,"wind_deg":12,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.27},{"dt":1615363200,"temp":43.95,"feels_like":37.11,"pressure":1006,"humidity":60,"dew_point":28.54,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":5.53,"wind_deg":2,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.19},{"dt":1615366800,"temp":42.93,"feels_like":36.82,"pressure":1007,"humidity":63,"dew_point":29.86,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":4.29,"wind_deg":357,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.19},{"dt":1615370400,"temp":41.97,"feels_like":36.36,"pressure":1007,"humidity":66,"dew_point":30.04,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":3.49,"wind_deg":43,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.19},{"dt":1615374000,"temp":40.77,"feels_like":35.56,"pressure":1007,"humidity":68,"dew_point":29.44,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":2.64,"wind_deg":45,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.19},{"dt":1615377600,"temp":39.81,"feels_like":34.25,"pressure":1007,"humidity":71,"dew_point":28.67,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":3.33,"wind_deg":41,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.15},{"dt":1615381200,"temp":39.31,"feels_like":34.02,"pressure":1008,"humidity":71,"dew_point":26.94,"uvi":0,"clouds":0,"visibility":10000,"wind_speed":2.73,"wind_deg":357,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01n"}],"pop":0.04},{"dt":1615384800,"temp":39.02,"feels_like":31.57,"pressure":1008,"humidity":71,"dew_point":25.97,"uvi":0.21,"clouds":0,"visibility":10000,"wind_speed":6.49,"wind_deg":352,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1615388400,"temp":40.5,"feels_like":35.33,"pressure":1007,"humidity":66,"dew_point":25.09,"uvi":0.85,"clouds":0,"visibility":10000,"wind_speed":2.33,"wind_deg":319,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1615392000,"temp":43.5,"feels_like":36.05,"pressure":1006,"humidity":56,"dew_point":20.88,"uvi":1.98,"clouds":0,"visibility":10000,"wind_speed":6.11,"wind_deg":230,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0},{"dt":1615395600,"temp":48.49,"feels_like":32.32,"pressure":1005,"humidity":35,"dew_point":1.02,"uvi":3.36,"clouds":0,"visibility":10000,"wind_speed":20.18,"wind_deg":232,"weather":[{"id":800,"main":"Clear","description":"clear
+        sky","icon":"01d"}],"pop":0}],"daily":[{"dt":1615230000,"sunrise":1615209724,"sunset":1615251567,"temp":{"day":56.17,"min":45.57,"max":65.25,"night":49.44,"eve":58.21,"morn":45.59},"feels_like":{"day":50.11,"night":42.28,"eve":52.32,"morn":39.45},"pressure":1015,"humidity":35,"dew_point":29.28,"wind_speed":3.67,"wind_deg":134,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"clouds":100,"pop":0,"uvi":4.15},{"dt":1615316400,"sunrise":1615296030,"sunset":1615338029,"temp":{"day":59.47,"min":44.24,"max":61.52,"night":46.49,"eve":54.21,"morn":44.24},"feels_like":{"day":51.96,"night":39.13,"eve":43.09,"morn":36.97},"pressure":1008,"humidity":30,"dew_point":18.18,"wind_speed":6.02,"wind_deg":53,"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"clouds":100,"pop":0.19,"uvi":4.63},{"dt":1615402800,"sunrise":1615382335,"sunset":1615424492,"temp":{"day":51.21,"min":38.8,"max":52.29,"night":38.8,"eve":47.46,"morn":39.31},"feels_like":{"day":37.15,"night":27.32,"eve":40.3,"morn":34.02},"pressure":1004,"humidity":31,"dew_point":-0.69,"wind_speed":16.37,"wind_deg":236,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"clouds":0,"pop":0.27,"snow":0.12,"uvi":4.81},{"dt":1615489200,"sunrise":1615468640,"sunset":1615510954,"temp":{"day":44.08,"min":33.8,"max":48.67,"night":36.16,"eve":46.09,"morn":34.57},"feels_like":{"day":37.08,"night":25.81,"eve":32.23,"morn":27.63},"pressure":1013,"humidity":50,"dew_point":13.93,"wind_speed":4.81,"wind_deg":28,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"clouds":24,"pop":0.47,"snow":0.68,"uvi":4.75},{"dt":1615575600,"sunrise":1615554945,"sunset":1615597416,"temp":{"day":37.74,"min":32.11,"max":42.78,"night":32.31,"eve":38.16,"morn":32.11},"feels_like":{"day":30.9,"night":25.32,"eve":27.54,"morn":22.71},"pressure":1017,"humidity":78,"dew_point":31.05,"wind_speed":5.66,"wind_deg":0,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":100,"pop":1,"snow":5.74,"uvi":2.2},{"dt":1615662000,"sunrise":1615641249,"sunset":1615683878,"temp":{"day":30.99,"min":27.9,"max":31.8,"night":27.9,"eve":30.69,"morn":31.5},"feels_like":{"day":17.74,"night":14.61,"eve":18.19,"morn":21.25},"pressure":1017,"humidity":99,"dew_point":30.42,"wind_speed":16.84,"wind_deg":18,"weather":[{"id":602,"main":"Snow","description":"heavy
+        snow","icon":"13d"}],"clouds":100,"pop":1,"snow":97.2,"uvi":3},{"dt":1615748400,"sunrise":1615727553,"sunset":1615770339,"temp":{"day":30.58,"min":22.41,"max":31.23,"night":22.41,"eve":31.23,"morn":25.9},"feels_like":{"day":21.83,"night":14.18,"eve":26.26,"morn":12.47},"pressure":1014,"humidity":99,"dew_point":29.82,"wind_speed":8.77,"wind_deg":12,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":98,"pop":1,"snow":9.9,"uvi":3},{"dt":1615834800,"sunrise":1615813856,"sunset":1615856800,"temp":{"day":35.91,"min":21.27,"max":36.95,"night":32.34,"eve":34.88,"morn":21.27},"feels_like":{"day":28.87,"night":22.87,"eve":29.73,"morn":11.77},"pressure":998,"humidity":98,"dew_point":35.58,"wind_speed":7.09,"wind_deg":171,"weather":[{"id":600,"main":"Snow","description":"light
+        snow","icon":"13d"}],"clouds":4,"pop":0.35,"snow":0.23,"uvi":3}]}'
+  recorded_at: Mon, 08 Mar 2021 17:26:53 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?latitude=39.738453&longitude=-104.984853&open_at=1615250790&term=fast
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer yPdiRRXEGzCsxS7hxC8Hr8-qqBTmzi-0Ro1FfbUof_TmcmtGntZ6oV0FrCF1kA3Ko_Quk6j-WJ8F4dpTuUmmKOcMS5Vc2IWQ7Wv5kEnYZWEfzRokIFayE_5czUdFYHYx
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - ed029ad4ff4af8b0
+      Ratelimit-Remaining:
+      - '4989'
+      Ratelimit-Dailylimit:
+      - '5000'
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2021-03-09T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--useast1-6d766dd6fd-jdzfg; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      X-Proxied:
+      - 10-65-75-6-useast1aprod
+      X-Extlb:
+      - 10-65-75-6-useast1aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Mar 2021 18:17:59 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-bos4679-BOS
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "w1yt-6MUeY3UrgwH4UUuJQ", "alias": "gyroz-denver-2",
+        "name": "Gyroz", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/IbFfM3DCUvrvLfD7umuoOA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/gyroz-denver-2?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 165, "categories": [{"alias": "mediterranean", "title": "Mediterranean"},
+        {"alias": "greek", "title": "Greek"}, {"alias": "hotdogs", "title": "Fast
+        Food"}], "rating": 4.0, "coordinates": {"latitude": 39.7397327, "longitude":
+        -104.976699}, "transactions": ["pickup", "delivery"], "price": "$", "location":
+        {"address1": "880 E Colfax Ave", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80218", "country": "US", "state": "CO", "display_address": ["880
+        E Colfax Ave", "Denver, CO 80218"]}, "phone": "+13038321010", "display_phone":
+        "(303) 832-1010", "distance": 711.5785146319865}, {"id": "-7AgflI0MNLAimyFb6T5tQ",
+        "alias": "good-times-burgers-and-frozen-custard-denver-11", "name": "Good
+        Times Burgers & Frozen Custard", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/egcncqdw79ndZ5f3nVVVyQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/good-times-burgers-and-frozen-custard-denver-11?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 89, "categories": [{"alias": "hotdogs", "title": "Fast Food"},
+        {"alias": "burgers", "title": "Burgers"}, {"alias": "icecream", "title": "Ice
+        Cream & Frozen Yogurt"}], "rating": 3.0, "coordinates": {"latitude": 39.7397363,
+        "longitude": -104.9771641}, "transactions": ["pickup", "delivery"], "price":
+        "$", "location": {"address1": "808 E Colfax Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80218", "country": "US", "state": "CO",
+        "display_address": ["808 E Colfax Ave", "Denver, CO 80218"]}, "phone": "+13038308060",
+        "display_phone": "(303) 830-8060", "distance": 672.7453013147265}, {"id":
+        "6xrjwkf2ALW0XVG3ezB8pw", "alias": "denver-auto-shipping-denver", "name":
+        "Denver Auto Shipping", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/IyU9seiTfQZG0DEiGqpoMA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/denver-auto-shipping-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 3, "categories": [{"alias": "vehicleshipping", "title": "Vehicle
+        Shipping"}], "rating": 5.0, "coordinates": {"latitude": 39.7613906860352,
+        "longitude": -105.014511108398}, "transactions": [], "location": {"address1":
+        "", "address2": null, "address3": "", "city": "Denver", "zip_code": "80211",
+        "country": "US", "state": "CO", "display_address": ["Denver, CO 80211"]},
+        "phone": "+17205149043", "display_phone": "(720) 514-9043", "distance": 4327.469986973213},
+        {"id": "pMFC9iSrthpcPEUU2TzUkA", "alias": "counter-culture-brewery-grille-denver-3",
+        "name": "Counter Culture Brewery + Grille", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/gyGaab7afijnm9h79rOZrw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/counter-culture-brewery-grille-denver-3?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 34, "categories": [{"alias": "tradamerican", "title": "American
+        (Traditional)"}, {"alias": "brewpubs", "title": "Brewpubs"}], "rating": 4.5,
+        "coordinates": {"latitude": 39.72751, "longitude": -104.984678279762}, "transactions":
+        ["pickup", "delivery"], "price": "$$", "location": {"address1": "205 E 7th
+        Ave", "address2": "", "address3": null, "city": "Denver", "zip_code": "80203",
+        "country": "US", "state": "CO", "display_address": ["205 E 7th Ave", "Denver,
+        CO 80203"]}, "phone": "+17206388786", "display_phone": "(720) 638-8786", "distance":
+        1216.8964553761293}, {"id": "Nj3O8Ei14PsnXYH6AzduCw", "alias": "motomaki-denver-denver-4",
+        "name": "Motomaki - Denver", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/PweFQBgBKzaxc5HFSNuDxA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/motomaki-denver-denver-4?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 99, "categories": [{"alias": "japanese", "title": "Japanese"},
+        {"alias": "salad", "title": "Salad"}, {"alias": "sushi", "title": "Sushi Bars"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.74392987944516, "longitude":
+        -104.99138083767525}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "500 16th St", "address2": "Unit 184C", "address3": null, "city":
+        "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address":
+        ["500 16th St", "Unit 184C", "Denver, CO 80202"]}, "phone": "+17202141390",
+        "display_phone": "(720) 214-1390", "distance": 826.0790040945691}, {"id":
+        "nZlsh5z7XXWPflCpioqW9Q", "alias": "capitol-eyebrow-threading-denver-2", "name":
+        "Capitol Eyebrow Threading", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/sre7JsNPxrDUkxGp7wTCSQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/capitol-eyebrow-threading-denver-2?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 11, "categories": [{"alias": "threadingservices", "title":
+        "Threading Services"}], "rating": 5.0, "coordinates": {"latitude": 39.73059,
+        "longitude": -104.9727}, "transactions": [], "location": {"address1": "1205
+        E 9th Ave", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80218", "country": "US", "state": "CO", "display_address": ["1205 E 9th Ave",
+        "Denver, CO 80218"]}, "phone": "+13036673131", "display_phone": "(303) 667-3131",
+        "distance": 1357.5981294028713}, {"id": "CAgyzpTyw7CPO3sYxSFovQ", "alias":
+        "benjy-dobrin-studios-denver", "name": "Benjy Dobrin Studios", "image_url":
+        "https://s3-media2.fl.yelpcdn.com/bphoto/QztT5V_iEewf82Z0pvEFLQ/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/benjy-dobrin-studios-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 7, "categories": [{"alias": "theater", "title": "Performing
+        Arts"}], "rating": 5.0, "coordinates": {"latitude": 39.7310820221901, "longitude":
+        -104.998733103275}, "transactions": [], "location": {"address1": "931 Santa
+        Fe Dr", "address2": "Ste 150", "address3": "", "city": "Denver", "zip_code":
+        "80204", "country": "US", "state": "CO", "display_address": ["931 Santa Fe
+        Dr", "Ste 150", "Denver, CO 80204"]}, "phone": "+17209412468", "display_phone":
+        "(720) 941-2468", "distance": 1450.9534305221205}, {"id": "LPKFdZGomFwx745W8BlAkA",
+        "alias": "sono-slurps-denver", "name": "S''ono! / Slurps!", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eJzrbYdtJ5bMN5HOTdqCUg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sono-slurps-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 68, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "poke", "title": "Poke"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.7463572, "longitude": -105.0072577}, "transactions": ["pickup",
+        "delivery"], "price": "$", "location": {"address1": "900 Auraria Pkwy", "address2":
+        null, "address3": "101-E", "city": "Denver", "zip_code": "80204", "country":
+        "US", "state": "CO", "display_address": ["900 Auraria Pkwy", "101-E", "Denver,
+        CO 80204"]}, "phone": "+13039539147", "display_phone": "(303) 953-9147", "distance":
+        1950.4827346267432}, {"id": "Pqu1dQJdh4bodlHz79YZ7Q", "alias": "sushi-cup-denver-2",
+        "name": "Sushi Cup", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/GenpTRjudOeVI0HFyEBU7Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sushi-cup-denver-2?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 173, "categories": [{"alias": "poke", "title": "Poke"}, {"alias":
+        "sushi", "title": "Sushi Bars"}, {"alias": "ramen", "title": "Ramen"}], "rating":
+        4.5, "coordinates": {"latitude": 39.72713325, "longitude": -104.9844534},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "208 E 7th Ave", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80203", "country": "US", "state": "CO", "display_address": ["208 E 7th Ave",
+        "Denver, CO 80203"]}, "phone": "+13038328008", "display_phone": "(303) 832-8008",
+        "distance": 1259.1611201484704}, {"id": "hikUTuE5f7Q84qhX8oj8nA", "alias":
+        "bail-out-bail-bonds-denver", "name": "Bail Out Bail Bonds", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/Z98F_URDhQD2pEIvr7kRmA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/bail-out-bail-bonds-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 1, "categories": [{"alias": "bailbondsmen", "title": "Bail
+        Bondsmen"}], "rating": 5.0, "coordinates": {"latitude": 39.7913284, "longitude":
+        -105.006381}, "transactions": [], "location": {"address1": "5211 Pecos St",
+        "address2": null, "address3": null, "city": "Denver", "zip_code": "80221",
+        "country": "US", "state": "CO", "display_address": ["5211 Pecos St", "Denver,
+        CO 80221"]}, "phone": "+17205893508", "display_phone": "(720) 589-3508", "distance":
+        6160.679597714299}, {"id": "9_WqiK6nzbRbOo-wBERUdA", "alias": "mobi-geek-iphone-repair-denver-6",
+        "name": "Mobi.Geek iPhone Repair", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ob-_z3rLBB1ZZWAzafffcg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/mobi-geek-iphone-repair-denver-6?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 112, "categories": [{"alias": "mobilephonerepair", "title":
+        "Mobile Phone Repair"}], "rating": 5.0, "coordinates": {"latitude": 39.73121,
+        "longitude": -104.98225}, "transactions": [], "location": {"address1": "",
+        "address2": null, "address3": "", "city": "Denver", "zip_code": "80203", "country":
+        "US", "state": "CO", "display_address": ["Denver, CO 80203"]}, "phone": "+17205201727",
+        "display_phone": "(720) 520-1727", "distance": 826.2790839608222}, {"id":
+        "r9w3hm2LTodzYSIlWAl86Q", "alias": "boar-and-castle-mobile-eatery-denver-2",
+        "name": "Boar & Castle Mobile Eatery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zaXJ5lvFUJKmKorhM56YHQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/boar-and-castle-mobile-eatery-denver-2?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 9, "categories": [{"alias": "foodtrucks", "title": "Food Trucks"},
+        {"alias": "catering", "title": "Caterers"}, {"alias": "mediterranean", "title":
+        "Mediterranean"}], "rating": 4.5, "coordinates": {"latitude": 39.74868, "longitude":
+        -104.99454}, "transactions": [], "location": {"address1": "", "address2":
+        "", "address3": null, "city": "Denver", "zip_code": "80202", "country": "US",
+        "state": "CO", "display_address": ["Denver, CO 80202"]}, "phone": "+16207571942",
+        "display_phone": "(620) 757-1942", "distance": 2180.6927734884302}, {"id":
+        "PvCfyIq7E0arem4gzUtr9Q", "alias": "tacos-la-tapatia-denver", "name": "Tacos
+        La Tapatia", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/kqKpvWUSsL39jj3h5pU2yQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tacos-la-tapatia-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 5, "categories": [{"alias": "tacos", "title": "Tacos"}], "rating":
+        4.0, "coordinates": {"latitude": 39.779622, "longitude": -104.95563483}, "transactions":
+        ["pickup", "delivery"], "location": {"address1": "4535 Thompson Ct", "address2":
+        null, "address3": "", "city": "Denver", "zip_code": "80216", "country": "US",
+        "state": "CO", "display_address": ["4535 Thompson Ct", "Denver, CO 80216"]},
+        "phone": "", "display_phone": "", "distance": 5212.0421337855405}, {"id":
+        "0XqO6q0M3GXdFT2jbUebjA", "alias": "tokyo-joes-denver", "name": "Tokyo Joe''s",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/uZ5Lq5Qf3L0GtAmF4089ug/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/tokyo-joes-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 85, "categories": [{"alias": "sushi", "title": "Sushi Bars"},
+        {"alias": "poke", "title": "Poke"}, {"alias": "asianfusion", "title": "Asian
+        Fusion"}], "rating": 3.5, "coordinates": {"latitude": 39.737688, "longitude":
+        -104.983173}, "transactions": ["pickup", "delivery"], "price": "$", "location":
+        {"address1": "1360 Grant St", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80203", "country": "US", "state": "CO", "display_address": ["1360
+        Grant St", "Denver, CO 80203"]}, "phone": "+13038307277", "display_phone":
+        "(303) 830-7277", "distance": 160.65239664654158}, {"id": "ktVDr1wM5r8ZEogc-TdzDw",
+        "alias": "pho-on-15th-street-denver", "name": "Pho on 15th Street", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/fAg4pTpnDJaxKZjHu8vQrg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/pho-on-15th-street-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 3, "categories": [{"alias": "vietnamese", "title": "Vietnamese"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.746559, "longitude": -104.9971563},
+        "transactions": [], "location": {"address1": "1460 Arapahoe St", "address2":
+        null, "address3": "", "city": "Denver", "zip_code": "80202", "country": "US",
+        "state": "CO", "display_address": ["1460 Arapahoe St", "Denver, CO 80202"]},
+        "phone": "", "display_phone": "", "distance": 1385.278862525523}, {"id": "2RCNeueXHOil20ptHgQ6_g",
+        "alias": "animal-control-specialist-denver", "name": "Animal Control Specialist",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/huL2AiKC3pEEMELfgATIqQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/animal-control-specialist-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 16, "categories": [{"alias": "wildlifecontrol", "title": "Wildlife
+        Control"}], "rating": 5.0, "coordinates": {"latitude": 39.75928497314453,
+        "longitude": -104.91756439208984}, "transactions": [], "location": {"address1":
+        null, "address2": null, "address3": null, "city": "Denver", "zip_code": "80207",
+        "country": "US", "state": "CO", "display_address": ["Denver, CO 80207"]},
+        "phone": "+17203186724", "display_phone": "(720) 318-6724", "distance": 6023.531199968084},
+        {"id": "8EBDvQICuSj4-9TCgwcirg", "alias": "smokin-ace-denver", "name": "Smokin''
+        Ace", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/vCOZUjoQ-7wniq7SAI4aJQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/smokin-ace-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 2, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "hotdog", "title": "Hot Dogs"}, {"alias": "bbq", "title":
+        "Barbeque"}], "rating": 5.0, "coordinates": {"latitude": 39.72957, "longitude":
+        -105.012497}, "transactions": ["pickup", "delivery"], "location": {"address1":
+        "810 N Vallejo St", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80204", "country": "US", "state": "CO", "display_address": ["810 N Vallejo
+        St", "Denver, CO 80204"]}, "phone": "+17206510034", "display_phone": "(720)
+        651-0034", "distance": 2561.105785544342}, {"id": "E-s08VJbxQPTs6BPquDY1g",
+        "alias": "potbelly-sandwich-shop-denver-2", "name": "Potbelly Sandwich Shop",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Jby_Fp0cl-8wxngBO2ekBQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/potbelly-sandwich-shop-denver-2?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 61, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "hotdogs", "title": "Fast Food"}, {"alias": "salad", "title": "Salad"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7430096727282, "longitude":
+        -104.988722289143}, "transactions": ["pickup", "delivery"], "price": "$",
+        "location": {"address1": "303 16th St", "address2": "Ste 180", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["303 16th St", "Ste 180", "Denver, CO 80202"]}, "phone":
+        "+13035869360", "display_phone": "(303) 586-9360", "distance": 605.1235824695566},
+        {"id": "SOho9iABtcqgoppOH9O_6g", "alias": "kyu-ramen-denver", "name": "Kyu
+        Ramen", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/iM6DxC6zxw5UASEgSAauXw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/kyu-ramen-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 34, "categories": [{"alias": "ramen", "title": "Ramen"}, {"alias":
+        "poke", "title": "Poke"}], "rating": 4.5, "coordinates": {"latitude": 39.73981,
+        "longitude": -104.979574}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "600 E Colfax Ave", "address2": null, "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["600 E Colfax Ave", "Denver, CO 80203"]}, "phone": "+13033538497",
+        "display_phone": "(303) 353-8497", "distance": 475.80916117258516}, {"id":
+        "2eZzw4MX2MhLzUnIq0Ws5g", "alias": "the-asian-cajun-denver", "name": "The
+        Asian Cajun", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/pkBgic04J41FovcmIq82dg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/the-asian-cajun-denver?adjust_creative=YNFahY6ld2e5fs8bjKEH2w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=YNFahY6ld2e5fs8bjKEH2w",
+        "review_count": 508, "categories": [{"alias": "cajun", "title": "Cajun/Creole"},
+        {"alias": "vietnamese", "title": "Vietnamese"}, {"alias": "seafood", "title":
+        "Seafood"}], "rating": 4.0, "coordinates": {"latitude": 39.71091, "longitude":
+        -105.01604}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "2400 W Alameda Ave", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80223", "country": "US", "state": "CO", "display_address":
+        ["2400 W Alameda Ave", "Denver, CO 80223"]}, "phone": "+13039220699", "display_phone":
+        "(303) 922-0699", "distance": 4053.916653614579}], "total": 4000, "region":
+        {"center": {"longitude": -104.984853, "latitude": 39.738453}}}'
+  recorded_at: Mon, 08 Mar 2021 17:26:53 GMT
+recorded_with: VCR 6.0.0
