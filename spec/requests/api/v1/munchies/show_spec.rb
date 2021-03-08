@@ -8,6 +8,10 @@ describe "Munchies route" do
       get '/api/v1/munchies?start=denver,co&destination=pueblo,co&food=hamburger'
 
       expect(response).to be_successful
+
+      data = JSON.parse(response.body, symbolize_names: true)[:data]
+
+      binding.pry
     end
   end
 end
