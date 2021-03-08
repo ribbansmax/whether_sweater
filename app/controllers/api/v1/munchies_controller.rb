@@ -5,6 +5,7 @@ class Api::V1::MunchiesController < ApplicationController
     # rescue
     current_weather = ForecastFacade.get_forecast(destination).current_weather
     # end
+    restaurant = RestaurantFacade.get_restaurant(destination, params[:food])
     binding.pry
 
   end
