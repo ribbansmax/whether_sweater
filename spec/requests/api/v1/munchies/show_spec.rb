@@ -15,7 +15,7 @@ describe "Munchies route" do
       expect(data[:attributes].keys).to eq([:destination_city, :travel_time, :forecast, :restaurant])
       expect(data[:attributes][:destination_city]).to eq('Pueblo, CO')
       expect(data[:attributes][:travel_time]).to eq("1 hours 44 min")
-      expect(data[:attributes][:forecast]).to eq({:summary=>"clear sky", :temperature=>53})
+      expect(data[:attributes][:forecast]).to eq({:summary=>"clear sky", :temperature=>57})
       expect(data[:attributes][:restaurant]).to eq({:name=>"Carl's Jr", :address=>"102 S Santa Fe Ave, Pueblo, CO 81003"})
     end
   end

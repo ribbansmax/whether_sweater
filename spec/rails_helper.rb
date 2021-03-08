@@ -13,6 +13,7 @@ VCR.configure do |config|
   config.filter_sensitive_data("HIDE_MY_DATA") { ENV['MAP_QUEST_API'] }
   config.filter_sensitive_data("HIDE_DATA") { ENV['OPEN_WEATHER_API'] }
   config.filter_sensitive_data("HIDDEN_DATA") { ENV['PEXELS_API'] }
+  config.filter_sensitive_data("NOT_FOR_YOUR_EYES") { ENV['YELP_API'] }
   config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
   config.default_cassette_options = { re_record_interval: 7.days }
