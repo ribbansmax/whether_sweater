@@ -1,38 +1,26 @@
 class Api::V1::UsersController < ApplicationController
 
   def create
-    begin
-      if request.content_type != 'application/json'
-        render json: {"error" => 'bad content-type'}, status: 400
-      else
-        if !check_passwords(params)
-          render json: {"error" => 'passwords must match, and be nonempty'}
-        else
-          if !check_email(params['user']['email'])
-          render json: {"error" => 'email is already registered'}
-          else
-            user = User.create!(user_params(params))
-          end
+    # begin
+      # if request.content_type != 'application/json'
+      #   render json: {"error" => 'bad content-type'}, status: 400
+      # else
+        user = User.new(user_params)
+        if user.valid?
+          user.save
+          render json: {"ok" => 'success'}, status: 200
+        else  
+          render json: {"error" => 'invalid signup'}, status: 400
         end
-      end
-    rescue
+    #   end
+    # rescue
       
-    end
+    # end
   end
 
   private
 
-  def user_params(params)
-    params.require('user').permit('email', 'password', 'password_confirmation')
-  end
-
-  def check_passwords(params)
-    user = params['user']
-    user['password'] == user['password_confirmation'] && 
-      (user['password'] || user['email']) != nil
-  end
-
-  def check_email(email)
-    !User.find_by(email: email)
+  def user_params
+    params.permit(:email, :password, :password_confirmation)
   end
 end
