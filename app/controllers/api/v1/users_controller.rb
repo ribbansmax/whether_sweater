@@ -6,14 +6,9 @@ class Api::V1::UsersController < ApplicationController
       # if request.content_type != 'application/json'
       #   render json: {"error" => 'bad content-type'}, status: 400
       # else
-        user = User.new(user_params)
-        # begin
-          user.save!
-          render json: UserSerializer.new(user), status: 201
-        # rescue
-          # binding.pry 
-          # render json: {"error" => 'invalid signup'}, status: 400
-        # end
+    user = User.new(user_params)
+    user.save!
+    render json: UserSerializer.new(user), status: 201
     #   end
     # rescue
       
