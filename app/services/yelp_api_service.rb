@@ -5,11 +5,18 @@ class YelpApiService
         req.params['latitude'] = location.lat
         req.params['longitude'] = location.lon
         req.params['term'] = food
+        req.params['open_at'] = unix_time(location.travel_time)
       end
       parse(response)
     end
 
     private
+
+    def unix_time(time)
+      # change this depending where you are going
+      Time.now.utc.to_i - "07:00:00".to_time.to_i + time.to_time.to_i
+    end
+
     def parse(arg)
       JSON.parse(arg.body, symbolize_names: true)
     end
