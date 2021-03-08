@@ -56,5 +56,18 @@ describe "Munchies route" do
         expect(data[:error]).to eq('yelp error, no restaurant found')
       end
     end
+    it "should return weather error" do
+      VCR.use_cassette('weather_error') do
+        stub_time = '2021-03-08 12:26:53 -0500'.to_time
+        allow(Time).to receive(:now).and_return(stub_time)
+        allow(OpenWeatherApiService).to receive(:forecast).and_return(nil)
+        get '/api/v1/munchies?start=denver,co&destination=pueblo,co&food=hamburger'
+
+        expect(response.status).to eq(404)
+        data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(data[:error]).to eq('forecast error')
+      end
+    end
   end
 end

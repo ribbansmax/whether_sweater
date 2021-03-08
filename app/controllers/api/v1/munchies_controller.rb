@@ -8,7 +8,7 @@ class Api::V1::MunchiesController < ApplicationController
       begin
         forecast = ForecastFacade.get_forecast(destination) # borrowed previously created route
       rescue
-        render json: {"error" => 'forecast error'}
+        render json: {"error" => 'forecast error'}, status: 404
       else
         begin
           restaurant = RestaurantFacade.get_restaurant(destination, params[:food])
