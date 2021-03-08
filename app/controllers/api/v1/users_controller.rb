@@ -8,7 +8,7 @@ class Api::V1::UsersController < ApplicationController
         user = User.new(user_params)
         if user.valid?
           user.save
-          render json: {"ok" => 'success'}, status: 200
+          render json: UserSerializer.new(user), status: 201
         else  
           render json: {"error" => 'invalid signup'}, status: 400
         end

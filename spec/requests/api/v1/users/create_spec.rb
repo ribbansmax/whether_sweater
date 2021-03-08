@@ -11,8 +11,13 @@ describe "Creates a user" do
       headers = { "CONTENT_TYPE" => "application/json" }
       post '/api/v1/users', params: data
 
-      expect(response.status).to eq(200)
+      expect(response.status).to eq(201)
       expect(User.last.email).to eq(data[:email])
+      data = JSON.parse(response.body, symbolize_names: true)[:data]
+
+      expect(data[:id]).to eq(User.last.id.to_s)
+      expect(data[:attributes][:email]).to eq(User.last.email)
+      expect(data[:attributes][:api_key]).to eq(User.last.api_key)
     end
   end
 
