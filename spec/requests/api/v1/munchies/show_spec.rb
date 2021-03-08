@@ -19,4 +19,30 @@ describe "Munchies route" do
       expect(data[:attributes][:restaurant]).to eq({:name=>"Carl's Jr", :address=>"102 S Santa Fe Ave, Pueblo, CO 81003"})
     end
   end
+  describe "sad paths to m̶a̶k̶e̶ ̶s̶u̶r̶e̶ ensure I pass" do
+    it "should return mapquest error" do
+      VCR.use_cassette('map_error') do
+        stub_time = '2021-03-08 12:26:53 -0500'.to_time
+        allow(Time).to receive(:now).and_return(stub_time)
+        get '/api/v1/munchies?start=kjsadhkljhsakljasd,sksk,asad&destination=pueblo,co&food=hamburger'
+
+        expect(response.status).to eq(400)
+        data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(data[:error]).to eq('route error')
+      end
+    end
+    it "should return route error for no start" do
+      VCR.use_cassette('no_start_error') do
+        stub_time = '2021-03-08 12:26:53 -0500'.to_time
+        allow(Time).to receive(:now).and_return(stub_time)
+        get '/api/v1/munchies?destination=denver,co&food=hamburger'
+
+        expect(response.status).to eq(400)
+        data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(data[:error]).to eq('route error')
+      end
+    end
+  end
 end
