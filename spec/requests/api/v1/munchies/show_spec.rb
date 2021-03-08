@@ -11,6 +11,13 @@ describe "Munchies route" do
 
       data = JSON.parse(response.body, symbolize_names: true)[:data]
 
+      expect(data.keys).to eq([:id, :type, :attributes])
+      expect(data[:attributes].keys).to eq([:destination_city, :travel_time, :forecast, :restaurant])
+      expect(data[:attributes][:destination_city]).to eq('Pueblo, CO')
+      expect(data[:attributes][:travel_time]).to eq("1 hours 44 min")
+      expect(data[:attributes][:forecast]).to eq({:summary=>"clear sky", :temperature=>53})
+      expect(data[:attributes][:restaurant]).to eq({:name=>"Carl's Jr", :address=>"102 S Santa Fe Ave, Pueblo, CO 81003"})
+
       binding.pry
     end
   end
