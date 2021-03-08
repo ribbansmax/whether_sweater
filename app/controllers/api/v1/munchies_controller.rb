@@ -13,7 +13,7 @@ class Api::V1::MunchiesController < ApplicationController
         begin
           restaurant = RestaurantFacade.get_restaurant(destination, params[:food])
         rescue
-          render json: {"error" => 'yelp error'}
+          render json: {"error" => 'yelp error, no restaurant found'}, status: 404
         else
           munchie = Munchie.new(destination, forecast, restaurant, params[:destination])
           render json: MunchieSerializer.new(munchie)

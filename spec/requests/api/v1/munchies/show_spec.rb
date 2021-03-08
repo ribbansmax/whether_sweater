@@ -50,10 +50,10 @@ describe "Munchies route" do
         allow(Time).to receive(:now).and_return(stub_time)
         get '/api/v1/munchies?start=denver,co&destination=pueblo,co&food=boogilyboogilyboonofoodforyou'
 
-        # expect(response.status).to eq(400)
+        expect(response.status).to eq(404)
         data = JSON.parse(response.body, symbolize_names: true)
 
-        expect(data[:error]).to eq('yelp error')
+        expect(data[:error]).to eq('yelp error, no restaurant found')
       end
     end
   end
