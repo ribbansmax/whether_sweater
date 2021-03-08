@@ -44,5 +44,17 @@ describe "Munchies route" do
         expect(data[:error]).to eq('route error')
       end
     end
+    it "should return yelp error" do
+      VCR.use_cassette('yelp_error') do
+        stub_time = '2021-03-08 12:26:53 -0500'.to_time
+        allow(Time).to receive(:now).and_return(stub_time)
+        get '/api/v1/munchies?start=denver,co&destination=pueblo,co&food=boogilyboogilyboonofoodforyou'
+
+        # expect(response.status).to eq(400)
+        data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(data[:error]).to eq('yelp error')
+      end
+    end
   end
 end
