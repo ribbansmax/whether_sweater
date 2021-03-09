@@ -39,6 +39,19 @@ describe "Signs in a user" do
       data = JSON.parse(response.body, symbolize_names: true)
 
       expect(data[:error]).to eq('Email and password do not match a user in our database')
+
+      data = {
+        email: 'no@example.com',
+        password: 'Password'
+      }
+
+      headers = { "CONTENT_TYPE" => "application/json" }
+      post '/api/v1/sessions', params: data
+
+      expect(response.status).to eq(401)
+      data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(data[:error]).to eq('Email and password do not match a user in our database')
     end
   end
 end
