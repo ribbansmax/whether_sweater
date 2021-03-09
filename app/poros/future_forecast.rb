@@ -14,11 +14,16 @@ class FutureForecast
         temperature: data[:hourly][hour][:temp],
         conditions: data[:hourly][hour][:weather].first[:description]
       }
-    else
+    elsif hour <= 119
       day = hour/24
       {
         temperature: data[:daily][day][:temp][:day],
         conditions: data[:daily][day][:weather].first[:description]
+      }
+    else
+      {
+        temperature: 'nobody knows',
+        conditions: 'unclear, or maybe clear, too far out to tell'
       }
     end
   end
