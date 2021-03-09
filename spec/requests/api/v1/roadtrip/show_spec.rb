@@ -24,8 +24,13 @@ describe "Makes a road trip" do
 
         expect(response.status).to eq(200)
 
-        data = JSON.parse(response.body, symbolize_names: true)
-        binding.pry
+        data = JSON.parse(response.body, symbolize_names: true)[:data]
+
+        expect(data[:type]).to eq('roadtrip')
+        expect(data[:attributes][:start_city]).to eq('Denver, CO')
+        expect(data[:attributes][:end_city]).to eq('Pueblo, CO')
+        expect(data[:attributes][:travel_time]).to eq('1 hours 44 min')
+        expect(data[:attributes][:weather_at_eta]).to eq({:temperature=>49.48, :conditions=>"clear sky"})
       end
     end
   end
