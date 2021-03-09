@@ -1448,10 +1448,12 @@ describe FutureForecast do
     fforecast = FutureForecast.new(data, 48)
     fforecast3 = FutureForecast.new(data, 49)
     fforecast2 = FutureForecast.new(data, 47)
+    fforecast4 = FutureForecast.new(data, 75)
 
     expect(fforecast.id).to eq(nil)
     expect(fforecast.weather_at_eta).not_to eq(fforecast2.weather_at_eta)
     expect(fforecast.weather_at_eta).to eq({:temperature=>59.41, :conditions=>"overcast clouds"})
     expect(fforecast.weather_at_eta).to eq(fforecast3.weather_at_eta)
+    expect(fforecast.weather_at_eta).not_to eq(fforecast4.weather_at_eta)
   end
 end
