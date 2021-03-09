@@ -48,6 +48,7 @@ GEM
     bcrypt (3.1.16)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
+    brakeman (5.0.0)
     builder (3.2.4)
     byebug (11.1.3)
     capybara (3.35.3)
@@ -239,6 +240,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
+  brakeman
   byebug
   faraday
   fast_jsonapi
