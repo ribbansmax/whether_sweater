@@ -29,7 +29,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-This is a final project from [Turing School of Software and Design](https://turing.io). The project requirements can be found [here!](https://backend.turing.io/module3/projects/sweater_weather/requirements). This project exposes an API that allows for requests to see the current weather, the future weather, directions for a roadtrip, find a restaurant that is open near the final destination, and get a background image for the search result.
+This is a final project from [Turing School of Software and Design](https://turing.io). The project requirements can be found [here!](https://backend.turing.io/module3/projects/sweater_weather/requirements) This project exposes an API that allows for requests to see the current weather, the future weather, directions for a roadtrip, find a restaurant that is open near the final destination, and get a background image for the search result.
 
 ### Built With
 
