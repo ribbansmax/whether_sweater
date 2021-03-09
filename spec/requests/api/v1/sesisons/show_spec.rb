@@ -8,7 +8,7 @@ describe "Signs in a user" do
         password: 'Password'
       }
 
-      user = User.create(data.merge(password_confirmation: 'Password'))
+      user = User.create!(data.merge(password_confirmation: 'Password'))
 
       headers = { "CONTENT_TYPE" => "application/json" }
       post '/api/v1/sessions', params: data
