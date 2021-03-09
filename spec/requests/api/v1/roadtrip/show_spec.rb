@@ -62,7 +62,7 @@ describe "Makes a road trip" do
         expect(data[:error]).to eq('api_key is invalid')
       end
     end
-    it "should no accept an invalid api key and return a 401" do
+    it "should no accept an invalid route and return a 400" do
       VCR.use_cassette('no_roadtrip_to_the_moon') do
         data = {
           email: 'email@example.com',
@@ -87,6 +87,33 @@ describe "Makes a road trip" do
         data = JSON.parse(response.body, symbolize_names: true)
 
         expect(data[:error]).to eq('impossible route')
+      end
+    end
+    it "mapquest is down" do
+      VCR.use_cassette('no_trip') do
+        data = {
+          email: 'email@example.com',
+          password: 'Password',
+          password_confirmation: 'Password'
+        }
+
+        user = User.create!(data)
+
+        headers = { "CONTENT_TYPE" => "application/json" }
+
+        data = {
+          origin: "Denver,CO",
+          destination: "Pueblo, CO",
+          api_key: user.api_key
+        }
+
+        post '/api/v1/road_trip', params: data
+
+        expect(response.status).to eq(400)
+
+        data = JSON.parse(response.body, symbolize_names: true)
+
+        expect(data[:error]).to eq('mapquest is down')
       end
     end
   end

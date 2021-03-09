@@ -1,5 +1,5 @@
 class Api::V1::RoadtripController < ApplicationController
-  rescue_from RuntimeError, with: :impossible_route
+  rescue_from RuntimeError, with: :sad_route
 
   def show
     return invalid_key if !User.find_by(api_key: params[:api_key])
@@ -15,7 +15,8 @@ class Api::V1::RoadtripController < ApplicationController
     render json: {"error" => 'api_key is invalid'}, status: 401
   end
 
-  def impossible_route
-    render json: {"error" => 'impossible route'}, status: 400
+  def sad_route(ex)
+    render json: {"error" => 'impossible route'}, status: 400 if ex.message == "impossible"
+    render json: {"error" => 'mapquest is down'}, status: 400 if ex.message == 'bad mapquest'
   end
 end
