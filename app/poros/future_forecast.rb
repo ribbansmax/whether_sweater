@@ -15,7 +15,7 @@ class FutureForecast
         conditions: data[:hourly][hour][:weather].first[:description]
       }
     elsif hour <= 119
-      day = hour/24
+      day = hour / 24
       {
         temperature: data[:daily][day][:temp][:day],
         conditions: data[:daily][day][:weather].first[:description]

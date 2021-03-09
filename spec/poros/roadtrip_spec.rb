@@ -22,7 +22,7 @@ describe Roadtrip do
     expect(roadtrip.id).to eq(nil)
     expect(roadtrip.start_city).to eq('Providence, RI')
     expect(roadtrip.end_city).to eq('Burlington, VT')
-    expect(roadtrip.travel_time).to eq("3 hours 56 min")
+    expect(roadtrip.travel_time).to eq('3 hours 56 min')
     expect(roadtrip.weather_at_eta).to eq(weather)
   end
 end

@@ -18,10 +18,10 @@ describe Munchie do
       munchie = Munchie.new(destination, forecast, restaurant, params[:destination])
 
       expect(munchie.id).to eq(nil)
-      expect(munchie.destination_city).to eq("Denver, CO")
-      expect(munchie.travel_time).to eq("14 hours 19 min")
-      expect(munchie.forecast).to eq({:summary=>"overcast clouds", :temperature=>52}) # nice temps there soon!
-      expect(munchie.restaurant).to eq({:name=>"Gyroz", :address=>"880 E Colfax Ave, Denver, CO 80218"})
+      expect(munchie.destination_city).to eq('Denver, CO')
+      expect(munchie.travel_time).to eq('14 hours 19 min')
+      expect(munchie.forecast).to eq({ summary: 'overcast clouds', temperature: 52 }) # nice temps there soon!
+      expect(munchie.restaurant).to eq({ name: 'Gyroz', address: '880 E Colfax Ave, Denver, CO 80218' })
     end
   end
 end

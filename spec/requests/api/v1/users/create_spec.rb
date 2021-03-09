@@ -1,14 +1,14 @@
 require 'rails_helper'
 
-describe "Creates a user" do
-  describe "happy path" do
-    it "should create a user" do
+describe 'Creates a user' do
+  describe 'happy path' do
+    it 'should create a user' do
       data = {
         email: 'email@example.com',
         password: 'Password',
         password_confirmation: 'Password'
       }
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/users', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(201)
@@ -22,8 +22,8 @@ describe "Creates a user" do
   end
 
   describe 'sad' do
-    it "should not create a user if email already exists" do
-      User.create!(:email => 'email@example.com', password: 'password', password_confirmation: 'password')
+    it 'should not create a user if email already exists' do
+      User.create!(email: 'email@example.com', password: 'password', password_confirmation: 'password')
 
       expect(User.last.email).to eq('email@example.com')
 
@@ -32,7 +32,7 @@ describe "Creates a user" do
         password: 'Password',
         password_confirmation: 'Password'
       }
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/users', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(400)
@@ -47,7 +47,7 @@ describe "Creates a user" do
         password: 'Password',
         password_confirmation: 'password'
       }
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/users', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(400)

@@ -3,17 +3,17 @@ require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 VCR.configure do |config|
-  config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :webmock
   config.ignore_localhost = true
-  config.filter_sensitive_data("HIDE_MY_DATA") { ENV['MAP_QUEST_API'] }
-  config.filter_sensitive_data("HIDE_DATA") { ENV['OPEN_WEATHER_API'] }
-  config.filter_sensitive_data("HIDDEN_DATA") { ENV['PEXELS_API'] }
-  config.filter_sensitive_data("NOT_FOR_YOUR_EYES") { ENV['YELP_API'] }
+  config.filter_sensitive_data('HIDE_MY_DATA') { ENV['MAP_QUEST_API'] }
+  config.filter_sensitive_data('HIDE_DATA') { ENV['OPEN_WEATHER_API'] }
+  config.filter_sensitive_data('HIDDEN_DATA') { ENV['PEXELS_API'] }
+  config.filter_sensitive_data('NOT_FOR_YOUR_EYES') { ENV['YELP_API'] }
   config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
   config.default_cassette_options = { re_record_interval: 7.days }

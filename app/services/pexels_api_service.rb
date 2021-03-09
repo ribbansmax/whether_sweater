@@ -8,6 +8,7 @@ class PexelsApiService
     end
 
     private
+
     def parse(arg)
       JSON.parse(arg.body, symbolize_names: true)
     end

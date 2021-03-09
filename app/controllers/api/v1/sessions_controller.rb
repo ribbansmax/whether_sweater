@@ -4,7 +4,7 @@ class Api::V1::SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       render json: UserSerializer.new(user)
     else
-      render json: {'error' => 'Email and password do not match a user in our database'}, status: 401
+      render json: { 'error' => 'Email and password do not match a user in our database' }, status: 401
     end
   end
 end

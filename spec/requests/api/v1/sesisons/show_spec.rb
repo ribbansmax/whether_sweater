@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe "Signs in a user" do
-  describe "happy path" do
-    it "should sign in a user" do
+describe 'Signs in a user' do
+  describe 'happy path' do
+    it 'should sign in a user' do
       data = {
         email: 'email@example.com',
         password: 'Password'
@@ -10,7 +10,7 @@ describe "Signs in a user" do
 
       user = User.create!(data.merge(password_confirmation: 'Password'))
 
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/sessions', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(200)
@@ -29,10 +29,10 @@ describe "Signs in a user" do
         password: 'Password'
       }
 
-      user = User.create!(data.merge(password_confirmation: 'Password'))
+      User.create!(data.merge(password_confirmation: 'Password'))
 
       data[:password] = 'password'
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/sessions', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(401)
@@ -45,7 +45,7 @@ describe "Signs in a user" do
         password: 'Password'
       }
 
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { 'CONTENT_TYPE' => 'application/json' }
       post '/api/v1/sessions', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(401)
