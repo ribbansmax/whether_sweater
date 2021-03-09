@@ -9,7 +9,7 @@ describe "Creates a user" do
         password_confirmation: 'Password'
       }
       headers = { "CONTENT_TYPE" => "application/json" }
-      post '/api/v1/users', params: data
+      post '/api/v1/users', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(201)
       expect(User.last.email).to eq(data[:email])
