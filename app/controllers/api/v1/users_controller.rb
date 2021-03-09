@@ -2,17 +2,9 @@ class Api::V1::UsersController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid, with: :show_error
 
   def create
-    # begin
-      # if request.content_type != 'application/json'
-      #   render json: {"error" => 'bad content-type'}, status: 400
-      # else
     user = User.new(user_params)
     user.save!
     render json: UserSerializer.new(user), status: 201
-    #   end
-    # rescue
-      
-    # end
   end
 
   private
