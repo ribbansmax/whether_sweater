@@ -700,7 +700,6 @@ describe Forecast do
          :dew_point=>18.68,
          :wind_speed=>5.61,
          :wind_deg=>43,
-         :weather=>[{:id=>803, :main=>"Clouds", :description=>"broken clouds", :icon=>"04d"}],
          :weather=>[{:id=>601, :main=>"Snow", :description=>"snow", :icon=>"13d"}],
          :clouds=>100,
          :pop=>1,
