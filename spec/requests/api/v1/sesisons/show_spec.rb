@@ -11,7 +11,7 @@ describe "Signs in a user" do
       user = User.create!(data.merge(password_confirmation: 'Password'))
 
       headers = { "CONTENT_TYPE" => "application/json" }
-      post '/api/v1/sessions', params: data
+      post '/api/v1/sessions', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(200)
       data = JSON.parse(response.body, symbolize_names: true)[:data]
@@ -33,7 +33,7 @@ describe "Signs in a user" do
 
       data[:password] = 'password'
       headers = { "CONTENT_TYPE" => "application/json" }
-      post '/api/v1/sessions', params: data
+      post '/api/v1/sessions', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(401)
       data = JSON.parse(response.body, symbolize_names: true)
@@ -46,7 +46,7 @@ describe "Signs in a user" do
       }
 
       headers = { "CONTENT_TYPE" => "application/json" }
-      post '/api/v1/sessions', params: data
+      post '/api/v1/sessions', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(401)
       data = JSON.parse(response.body, symbolize_names: true)

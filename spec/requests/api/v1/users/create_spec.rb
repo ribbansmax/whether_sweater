@@ -33,7 +33,7 @@ describe "Creates a user" do
         password_confirmation: 'Password'
       }
       headers = { "CONTENT_TYPE" => "application/json" }
-      post '/api/v1/users', params: data
+      post '/api/v1/users', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(400)
       data = JSON.parse(response.body, symbolize_names: true)
@@ -48,7 +48,7 @@ describe "Creates a user" do
         password_confirmation: 'password'
       }
       headers = { "CONTENT_TYPE" => "application/json" }
-      post '/api/v1/users', params: data
+      post '/api/v1/users', params: JSON.generate(data), headers: headers
 
       expect(response.status).to eq(400)
       expect(response.status).to eq(400)
