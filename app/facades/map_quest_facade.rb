@@ -7,6 +7,7 @@ class MapQuestFacade
 
     def get_destination(start, end_location)
       destination = MapQuestService.get_destination(start, end_location)
+      raise 'impossible' if destination[:info][:statuscode] >= 400
       destination = Destination.new(destination)
     end
   end
