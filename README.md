@@ -17,7 +17,7 @@
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#getting-started">Contributing</a>
+      <a href="#contributing">Contributing</a>
     </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -36,6 +36,19 @@ This is a final project from [Turing School of Software and Design](https://turi
 * [Ruby on Rails](https://rubyonrails.org/)
 * [PostgreSQL](https://www.postgresql.org/)
 * [RSpec](https://github.com/rspec/rspec-rails)
+
+
+## Routes
+
+The routes this API exposes are:
+```
+      get '/api/v1/forecast'
+      post '/api/v1/users'
+      get '/api/v1/backgrounds'
+      post '/api/v1/sessions'
+      post '/api/v1/road_trip'
+      get '/api/v1/munchies'
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing
