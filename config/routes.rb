@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get '/backgrounds', to: "backgrounds#show"
       post '/sessions', to: "sessions#show"
       post '/road_trip', to: "roadtrip#show"
+      get '/munchies', to: "munchies#show"
     end
   end
 end

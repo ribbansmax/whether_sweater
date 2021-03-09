@@ -7,6 +7,14 @@ class MapQuestService
       parse(response)
     end
 
+    def get_destination(start, end_location)
+      response = route_faraday.get('route') do |req|
+        req.params['from'] = start
+        req.params['to'] = end_location
+      end
+      parse(response)
+    end
+
     private
     def parse(arg)
       JSON.parse(arg.body, symbolize_names: true)
@@ -14,6 +22,12 @@ class MapQuestService
 
     def faraday
       Faraday.new('http://www.mapquestapi.com/geocoding/v1/') do |faraday|
+        faraday.params['key'] = ENV['MAP_QUEST_API']
+      end
+    end
+
+    def route_faraday
+      Faraday.new('http://www.mapquestapi.com/directions/v2/') do |faraday|
         faraday.params['key'] = ENV['MAP_QUEST_API']
       end
     end
