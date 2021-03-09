@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "Makes a road trip" do
   describe "happy path" do
-    it "should sign in a user" do
+    it "should accept a users api key and return a trip" do
       VCR.use_cassette('roadtrip_to_pueblo') do
         data = {
           email: 'email@example.com',
